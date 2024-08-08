@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css2?family=Wix+Madefor+Text:ital,wght@0,400..800;1,400..800&display=swap");
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+:root {
+  --background-color: #ffffff;
+  --primary-text-color: #000000;
+  --toggle-bg: #000000;
+  --toggle-fg: #ffffff;
+  --main-icon-color: #000000;
+}
+
+.app {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+
+  background-color: var(--background-color);
+}
+
+[data-theme="dark"] {
+  --background-color: #000000;
+  --primary-text-color: #ffffff;
+  --toggle-bg: #000000;
+  --toggle-fg: #ffffff;
+  --main-icon-color: #ffffff;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+li {
+  color: var(--primary-text-color);
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 15px 2%;
+  align-items: center;
+
+  .nav-rightPart {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+
+    .number {
+      display: flex;
+      flex-direction: column;
+      margin-left: 10px;
+      margin-right: 35px;
+      p {
+        margin: 0;
+      }
+      .number-n {
+        width: 123px;
+        height: 18px;
+        font-size: 15px;
+        font-weight: bold;
+        opacity: 1;
+      }
+      .number-p {
+        width: 81px;
+        height: 16px;
+        font-size: 13px;
+        opacity: 1;
+      }
+    }
+
+    .contact-button {
+      width: 145px;
+      height: 49px;
+      border-radius: 20px;
+      background: #746859;
+      color: #ffffff;
+      border: none;
+      font-weight: normal;
+      font-size: 16px;
+      font-style: normal;
+      font-family: "Wix Madefor Text";
+    }
+  }
+
+  .nav-links {
+    display: flex;
+    flex-direction: row;
+    gap: 5rem;
+
+    .services-div,
+    .resources-div {
+      display: flex;
+      flex-direction: row;
+      gap: 7px;
+
+      img {
+        text-align: center;
+      }
+      img:hover {
+        transform: rotate(-180deg);
+      }
+    }
+
+    .services-div:hover,
+    .resources-div:hover {
+      img {
+        transform: rotate(-180deg);
+      }
+    }
+
+    .nav-link {
+      font-family: "Wix Madefor Text";
+      font-size: 17px;
+      font-weight: normal;
+      font-style: normal;
+      color: var(--primary-text-color);
+      text-decoration: none;
+    }
+  }
+  .logo {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 11px;
+
+    .title {
+      width: 117px;
+      height: 18px;
+      font-weight: bolder;
+    }
+  }
+}
