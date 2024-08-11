@@ -1,18 +1,21 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import navIcon from "../assets/icons/nav-main-icon.svg";
+import navIcon from "../Nav/nav-assets/nav-main-icon.svg";
 import { useSelector } from "react-redux";
-import phoneIcon from "../assets/icons/phone.svg";
-import navIconDark from "../assets/icons/nav-icon-dark.svg";
-import phoneIconDark from "../assets/icons/phone-dark.svg";
-import arrowDownDark from '../assets/icons/arrow-down-dark.svg'
+import phoneIcon from "../Nav/nav-assets/phone.svg";
+import navIconDark from "../Nav/nav-assets/nav-icon-dark.svg";
+import phoneIconDark from "../Nav/nav-assets/phone-dark.svg";
+import arrowDownDark from "../Nav/nav-assets/arrow-down-dark.svg";
+import arrowDown from "../Nav/nav-assets/downArrow.svg";
+import ServicesMenu from "./ServicesMenu";
+import ResourcesMenu from "./ResourcesMenu";
 
 const Nav = () => {
   const isDark = useSelector((state) => state.dark.isDark);
   console.log(isDark);
 
   return (
-    <nav >
+    <div id="nav">
       <div className="logo">
         {isDark ? (
           <Link to="/">
@@ -23,7 +26,7 @@ const Nav = () => {
             <img src={navIcon} className="navIcon" />
           </Link>
         )}
-        <Link style={{textDecoration:"none"}} to="/">
+        <Link style={{ textDecoration: "none" }} to="/">
           <p className="title">LAWKOS</p>
         </Link>
       </div>
@@ -34,16 +37,30 @@ const Nav = () => {
           </Link>
         </div>
         <div className="services-div">
-          <Link className="nav-link" to="/services">
+          <Link className="nav-link service" to="/services">
             Services
+            {isDark ? <img src={arrowDown} /> : <img src={arrowDownDark} />}
           </Link>
-          <img src={arrowDownDark}/>
+          <div className="lene-div">
+          <div className='line'>
+            <div className="lineee"></div>
+          </div>
+          </div>
+         
+          <ServicesMenu  />
         </div>
         <div className="resources-div">
-          <Link className="nav-link" to="/resources">
+          <Link className="nav-link resource" to="/resources">
             Resources
+            {isDark ? <img src={arrowDown} /> : <img src={arrowDownDark} />}
           </Link>
-          <img src={arrowDownDark}/>
+          <div className="lene-div">
+          <div className='line'>
+            <div className="lineee"></div>
+          </div>
+          </div>
+         
+          <ResourcesMenu  />
         </div>
         <div className="news-div">
           <Link className="nav-link" to="/news">
@@ -64,7 +81,7 @@ const Nav = () => {
         </div>
         <button className="contact-button">Contact Us</button>
       </div>
-    </nav>
+    </div>
   );
 };
 

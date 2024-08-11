@@ -1,0 +1,125 @@
+.container{
+    display: none;
+}
+.nav-megamenu  {
+    display: grid;
+    grid-template-columns: 2.7fr 1fr;
+    position: fixed;
+    background: #fff;;
+    top:4.75vw;
+    overflow: hidden;
+    width: 100%;
+    height: fit-content;
+    background-color: var(--background-color);
+    filter: drop-shadow(0px 15px 20px rgba(0,0,0,0.1 ));
+    position: absolute;
+    left: 0; 
+    z-index: 15;
+    @media(max-width:1470px) {
+        top: 6.5vw;
+    }
+   
+
+    .services-leftPart {
+      display: flex;
+      flex-direction: column;
+      padding-left: 6%;
+      padding-bottom: 3%;
+      background-color: var(--services-left-bg-color);
+
+   
+       
+        .services-card {
+            display: flex;
+            flex-direction: row;
+            justify-content: left;
+            align-items: left;
+            width: 250px;
+            height: 130px;
+            gap: 2px;
+            padding-inline: 2%;
+            border: 1px solid transparent;
+            position: relative;
+            &:hover {
+                border:1px solid #a67b48;
+                border-radius: 15px;
+                .arrow-icon {
+                    display: block;
+                }
+
+                .title{
+                    font-weight: bold;
+                }
+
+            }
+
+            .arrow-icon {
+                position: absolute;
+                top: 10px;
+                right: 20px;
+                display: none;
+            }
+
+            .service-caed-div{
+                padding-top: 7%;
+                padding-left: 3%;
+                text-align: left;
+                
+            }
+        }
+
+        .services-card p {
+            font-size: 20px;
+            font-weight: 500;
+            line-height: 32px;
+            font-style: normal;
+        }
+    
+    }
+   
+   
+    
+  
+    .services-items {
+        display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(285px, 1fr));
+   
+      
+      
+
+    }
+  
+    .services-rightPart {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      flex-wrap: wrap;
+      background: var(--services-right-bg-color);
+      
+
+       .wraper {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        max-width: 351px;
+        margin-left: 10%;
+        text-align: left;
+        padding-right: 20%;
+       
+        .title{
+            font-size: 26px;
+        }
+        .description {
+            font-size: 16px;
+        }
+      }
+
+      .line-services {
+       width: 50px;
+       height: 2px;
+       background-color: var(--primary-text-color);
+      }
+
+    
+    }
+  }
