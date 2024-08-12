@@ -3,7 +3,7 @@
 }
 .nav-megamenu  {
     display: grid;
-    grid-template-columns: 2.7fr 1fr;
+    grid-template-columns: 2.7fr 1.2fr;
     position: fixed;
     background: #fff;;
     top:4.75vw;
@@ -34,8 +34,8 @@
             flex-direction: row;
             justify-content: left;
             align-items: left;
-            width: 250px;
-            height: 130px;
+            width: clamp(110px,12vw,260px);
+            height: clamp(120px,9vw,137px);
             gap: 2px;
             padding-inline: 2%;
             border: 1px solid transparent;
@@ -48,7 +48,7 @@
                 }
 
                 .title{
-                    font-weight: bold;
+                    font-weight:600;
                 }
 
             }
@@ -60,16 +60,21 @@
                 display: none;
             }
 
-            .service-caed-div{
+            .service-card-div{
                 padding-top: 7%;
                 padding-left: 3%;
                 text-align: left;
+
+                img {
+                    width: clamp(30px,2.8vw,40px) ;
+                    height:clamp(30px,2.8vw,40px) ;
+                }
                 
             }
         }
 
         .services-card p {
-            font-size: 20px;
+            font-size:clamp(12px,1vw,20px);; 
             font-weight: 500;
             line-height: 32px;
             font-style: normal;
@@ -82,7 +87,7 @@
   
     .services-items {
         display: grid;
-        grid-template-columns: repeat(auto-fit,minmax(285px, 1fr));
+        grid-template-columns: repeat(auto-fit,minmax(clamp(150px,14.5vw,285px), 1fr));
    
       
       
@@ -107,10 +112,10 @@
         padding-right: 20%;
        
         .title{
-            font-size: 26px;
+            font-size: clamp(20px,2vw,26px) ;
         }
         .description {
-            font-size: 16px;
+            font-size: clamp(10px,1.5vw,16px);
         }
       }
 
