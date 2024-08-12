@@ -38,10 +38,10 @@
             height: clamp(120px,9vw,137px);
             gap: 2px;
             padding-inline: 2%;
-            border: 1px solid transparent;
+            border: 2px solid transparent;
             position: relative;
             &:hover {
-                border:1px solid #a67b48;
+                border:2px solid #a67b48;
                 border-radius: 15px;
                 .arrow-icon {
                     display: block;

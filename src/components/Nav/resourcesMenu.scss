@@ -1,5 +1,5 @@
 .resources-container {
-   display: none;
+//    display: none;
     .nav-megamenu-resources {
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -41,16 +41,19 @@
                .resources-right-part {
                 max-width: 45vw;
                 height: 20vw;
-                padding-top: 3.5vw;
+                padding-top: clamp(4%,4.9vw,7.5%);
                 
 
                 .slick-dots li button::before {
                     color: var(--resources-dots-color) ;
                     opacity: 1 ;
                     font-size: 10px ;
+                    
                   }
                   
-             
+                  .slick-dots {
+                    margin-top: 30px;
+                  }
                   .slick-dots li.slick-active button::before {
                     color:#a67b48; 
                     font-size: 11px;
@@ -59,14 +62,23 @@
                  
                   .slick-prev:before, .slick-next:before {
                     display: none;
-                  }
- 
+                  }   
+                  .slick-list {
+                    margin-left: clamp(15px,1.4vw,26px); /* Negative margin to avoid extra space on the edges */
+                }
+
+
                   .carousel-img {
+                    width: clamp(350px,20.5vw,420px);
+                   
+                  
                     
                     img {
-                        object-fit: co;
-                        width: 21.5vw;
-                        height: 15vw;
+                        
+                         width: clamp(200px,20.5vw,420px);
+                        height: 100%;
+                        // width: 21.5vw;
+                        // height: 15vw;
                     }
                   }
                }

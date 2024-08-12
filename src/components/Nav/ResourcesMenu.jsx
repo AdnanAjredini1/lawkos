@@ -17,7 +17,7 @@ function CustomNextArrow(props) {
     return (
       <div
         className={className}
-        style={{ ...style, display: "flex", alignItems: "center", justifyContent: "center",color:'rgba(255, 255, 255, 0)', background: "transparent",backgroundColor:'rgba(255, 255, 255, 0)' }}
+        style={{ ...style, display: "flex", alignItems: "center", justifyContent: "center", background: "transparent" }}
         onClick={onClick}
       >
         <img src={rightIcon} alt="Next" />
@@ -66,6 +66,7 @@ function ResourcesMenu() {
 
         <div className="resources-right-part">
           <Slider {...settings}>
+         
             <div className="carousel-img">
               <img src={img1} />
             </div>
@@ -76,9 +77,6 @@ function ResourcesMenu() {
             <div className="carousel-img">
             <img src={img1} />
             </div>
-           
-            
-            
           </Slider>
         </div>
       </div>

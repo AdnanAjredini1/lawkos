@@ -18,6 +18,7 @@ html {
   --services-right-bg-color: #fbf6f1;
   --services-left-bg-color:#ffffff;
   --resources-dots-color:#b8b7b7;
+  --contact-us-button-color:#292520;
 }
 
 .app {
@@ -37,6 +38,8 @@ html {
   --services-right-bg-color: #312d29;
   --services-left-bg-color:#232220;
   --resources-dots-color:#fffdfd;
+  --contact-us-button-color:#746859;
+
    
 }
 
@@ -69,6 +72,9 @@ li {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+      @media (max-width:950px) {
+      display: none;
+    }
     
     img{
       width: clamp(20px,2vw,28px);
@@ -103,11 +109,11 @@ li {
     }
 
     .contact-button {
-      width: clamp(100px,8vw,145px) ;
+      width: clamp(100px,8vw,150px) ;
 
-      height: clamp(35px, 3vw, 49px);
-      border-radius: 20px;
-      background: #746859;
+      height: clamp(35px, 3vw, 54px);
+      border-radius: 28px;
+      background: var(--contact-us-button-color);
       color: #ffffff;
       border: none;
       font-weight: normal;
@@ -124,14 +130,14 @@ li {
     flex-direction: row;
     flex-wrap: wrap;
     gap: clamp(30px,3vw,56px);
+    @media (max-width:950px) {
+      display: none;
+    }
 
     .resources-div {
       .line {
         height: 35px;
         width: 120px;
-        // background-color:  var(--background-color);
-        // display: none;
-        // margin-top: 3px;
         background-color: rgba(255, 255, 255, 0);
         position: absolute;
         z-index: 35;
@@ -204,7 +210,7 @@ li {
     .resources-div {
       text-align: center;
 
-      img {
+      .arrow {
         text-align: center;
         
       }

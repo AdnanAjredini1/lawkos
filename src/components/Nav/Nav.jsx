@@ -39,7 +39,7 @@ const Nav = () => {
         <div className="services-div">
           <Link className="nav-link service" to="/services">
             Services
-            {isDark ? <img src={arrowDown} /> : <img src={arrowDownDark} />}
+            {isDark ? <img  className="arrow" src={arrowDown} /> : <img className="arrow" src={arrowDownDark} />}
           </Link>
           <div className="lene-div">
           <div className='line'>
@@ -52,7 +52,7 @@ const Nav = () => {
         <div className="resources-div">
           <Link className="nav-link resource" to="/resources">
             Resources
-            {isDark ? <img src={arrowDown} /> : <img src={arrowDownDark} />}
+            {isDark ? <img className="arrow" src={arrowDown} /> : <img className="arrow" src={arrowDownDark} />}
           </Link>
           <div className="lene-div">
           <div className='line'>
