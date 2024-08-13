@@ -68,14 +68,25 @@ function ResourcesMenu() {
           <Slider {...settings}>
          
             <div className="carousel-img">
-              <img src={img1} />
+            <p className="carousel-text">Why LawKos is your ideal partner for legal solutions and services.</p>
+
+            <div className="img-container">
+            <img src={img1} />
+            </div>
             </div>
             <div className="carousel-img">
+            <p className="carousel-text">LawKos - 15 years of legal excellence</p>
+            <div className="img-container">
             <img src={img2} />
+            </div>
             </div>
 
             <div className="carousel-img">
+            <p className="carousel-text">Why LawKos is your ideal partner for legal solutions and services.</p>
+            <div className="img-container">
             <img src={img1} />
+            </div>
+           
             </div>
           </Slider>
         </div>

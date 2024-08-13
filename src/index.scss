@@ -138,18 +138,26 @@ li {
       .line {
         height: 35px;
         width: 120px;
+        
         background-color: rgba(255, 255, 255, 0);
         position: absolute;
         z-index: 35;
         display: none;
         .lineee{
-          height: 37px;
+
+          height: 30px;
           width: 7px;
+          border-radius: 10px;
           background-color: #a67b48;
           position: relative;
           left: 30%;
-          top: 20%;
+          top: 26%;
           z-index: 40;
+          @media (max-width:1402px) {
+            height: 26px;
+            top: 34%;
+            
+          }
         }
       }
   
@@ -180,13 +188,19 @@ li {
       z-index: 35;
       display: none;
       .lineee{
-        height: 37px;
+        height: 30px;
         width: 7px;
+        border-radius: 10px;
         background-color: #a67b48;
         position: relative;
         left: 30%;
-        top: 20%;
+        top: 26%;
         z-index: 40;
+        @media (max-width:1402px) {
+          height: 26px;
+          top: 34%;
+          
+        }
       }
     }
 
