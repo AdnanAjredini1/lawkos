@@ -2,6 +2,8 @@ import { useDispatch, useSelector } from "react-redux"
 import Nav from "./components/Nav/Nav"
 import { darkActions } from "./store/slice/darkModeSlice";
 import { Outlet } from "react-router-dom";
+import MobileNav from "./components/MobileNav/MobileNav";
+import Description from "./components/Description/Description";
 
 
 function App() {
@@ -9,13 +11,15 @@ function App() {
   const dispatch = useDispatch();
 
   return (
-    <div className="app" data-theme={isDark ? 'dark':""}>
+    <div className="appp" data-theme={isDark ? 'dark':""}>
       <Nav /> 
+      <MobileNav />
+      <Description />
       <div> 
         <Outlet />
       </div>
       <button onClick={() => dispatch(darkActions.switchToDark())} 
-        style={{ width: '100px', position: 'absolute', bottom: '0' }}>
+        style={{  position: 'absolute', bottom: '0',zIndex:'100' }}>
         Dark Mode
       </button>
     </div>

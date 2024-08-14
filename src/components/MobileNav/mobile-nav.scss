@@ -1,0 +1,65 @@
+.mobileNav {
+  display: none;
+  background-color: var(--background-color);
+
+  @media (max-width:950px) {
+    display: block;
+
+  }
+
+  .mobileTitle {
+    font-family: "DM Serif Display", serif;
+    width: 140px;
+    color: var(--primary-text-color);
+    font-size: 25px;
+  }
+
+  .mobileTitleNav {
+    font-family: "DM Serif Display", serif;
+    width: 140px;
+    color: #000000;
+    font-size: 25px;
+  }
+
+  .navIconn {
+    width: 45px;
+    min-height: 45px;
+    margin-left: 2%;
+    margin-right: 6%;
+  }
+
+    .darkk {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='%23ffffff' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+  }
+  
+  .item-mob {
+    border-bottom: 2px solid #a67b48;
+    
+  }
+
+  .item-mob:last-child{
+    border-bottom: none;
+  }
+
+  .mobileBtn {
+    margin-top: 50px;
+    color: white;
+    background-color: #a67b48 ;
+    width: 200px;
+    margin-left: 20%;
+    height: 60px;
+    font-weight: 600;
+    @media (max-width:330px) {
+      margin-left: 14%;
+      
+    }
+
+    // .li-drop {
+    //   border-bottom: 2px solid #a67b48;
+    // }
+    
+  }
+  
+
+
+}

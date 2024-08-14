@@ -1,0 +1,29 @@
+.descriptionn{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+   margin-top: 100px;
+      .big-title {
+        font-size: clamp(40px,12vw,81px);
+      }
+
+      .description-right-part{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+
+         button{
+          width: clamp(200px,75vw,275px);
+          height: 58px;
+          border-radius: 29px;
+          background: #a67b48
+
+        }
+      }
+
+   @media (max-width:950px) {
+     flex-direction: column;
+     padding-inline: 10%;
+
+   }
+}

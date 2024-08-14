@@ -15,8 +15,8 @@ const Nav = () => {
   console.log(isDark);
 
   return (
-    <div id="nav">
-      <div className="logo">
+    <div id="navv">
+      <div className="logoo">
         {isDark ? (
           <Link to="/">
             <img src={navIconDark} className="navIcon" />
@@ -30,7 +30,7 @@ const Nav = () => {
           <p className="title">LAWKOS</p>
         </Link>
       </div>
-      <div className="nav-links">
+      <div className="nav-linkss">
         <div className="about-div">
           <Link className="nav-link" to="/about">
             About
@@ -42,7 +42,7 @@ const Nav = () => {
             {isDark ? <img  className="arrow" src={arrowDown} /> : <img className="arrow" src={arrowDownDark} />}
           </Link>
           <div className="lene-div">
-          <div className='line'>
+          <div className='line1'>
             <div className="lineee"></div>
           </div>
           </div>
@@ -55,7 +55,7 @@ const Nav = () => {
             {isDark ? <img className="arrow" src={arrowDown} /> : <img className="arrow" src={arrowDownDark} />}
           </Link>
           <div className="lene-div">
-          <div className='line'>
+          <div className='line1'>
             <div className="lineee"></div>
           </div>
           </div>

@@ -19,9 +19,11 @@ html {
   --services-left-bg-color:#ffffff;
   --resources-dots-color:#b8b7b7;
   --contact-us-button-color:#292520;
+  --toggler-btn-url:"data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='%23000000' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E";
+
 }
 
-.app {
+.appp {
   width: 100%;
   min-height: 100vh;
   display: flex;
@@ -39,6 +41,8 @@ html {
   --services-left-bg-color:#232220;
   --resources-dots-color:#fffdfd;
   --contact-us-button-color:#746859;
+  --toggler-btn-url:"data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='%23ffffff' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E";
+ 
 
    
 }
@@ -55,7 +59,7 @@ li {
   color: var(--primary-text-color);
 }
 
-#nav {
+#navv {
   position: fixed;
   top: 0;
   left: 0;
@@ -64,7 +68,11 @@ li {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  padding: 0.2vw 2.5% 0;
+  padding: 1vw 2% 0;
+  // padding-top: 2%;
+  @media (max-width:950px) {
+    display: none;
+  }
 
 
 
@@ -72,6 +80,7 @@ li {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    margin-left: 4%;
       @media (max-width:950px) {
       display: none;
     }
@@ -125,7 +134,7 @@ li {
     }
   }
 
-  .nav-links {
+  .nav-linkss {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -135,7 +144,7 @@ li {
     }
 
     .resources-div {
-      .line {
+      .line1 {
         height: 35px;
         width: 120px;
         
@@ -165,7 +174,7 @@ li {
         .resources-container{
           display: flex;
         }
-        .line {
+        .line1 {
           display: block;
         }
         .resource img {
@@ -177,7 +186,7 @@ li {
      }
 
    .services-div {
-    .line {
+    .line1 {
       height: 35px;
       width: 120px;
       // background-color:  var(--background-color);
@@ -208,7 +217,7 @@ li {
       .container{
         display: flex;
       }
-      .line {
+      .line1{
         display: block;
       }
       .service img {
@@ -262,12 +271,14 @@ li {
     } 
   }
 
-  .logo {
+  .logoo {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    align-items: center;
+    align-items: end;
     gap: 11px;
+  
+
 
     img{
       width:clamp(35px,3vw,45px);
@@ -275,10 +286,13 @@ li {
    
     .title {
       font-family: "DM Serif Display", serif;
-      width: clamp(100px,5vw,117px);;
+      width: clamp(100px,5vw,120px);
       // 117px;
       font-weight: 900;
       font-size: clamp(20px,2vw,26px);
+      margin: 0;
+      
+      
 
     }
   }

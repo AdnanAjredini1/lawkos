@@ -9,7 +9,7 @@ function ServicesMenu() {
     <div className="container">
       <div className="nav-megamenu services-megamenu">
           <div className="services-leftPart">
-              <p style={{textAlign:'left',marginLeft:'20px',width:'171px',height:'26px',fontSize:'21px',fontWeight:'normal',fontStyle:'normal'}}>Our practice area</p>
+              <p style={{textAlign:'left',marginLeft:'20px',marginTop:'1%',width:'171px',height:'26px',fontSize:'clamp(10px,1.8vw,21px)',fontWeight:'normal',fontStyle:'normal'}}>Our practice area</p>
 
               <div className="services-items">
                   {servicesItems.map(item => (
