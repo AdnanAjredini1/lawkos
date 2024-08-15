@@ -1,0 +1,15 @@
+.about-us-wrapper{
+    display: flex;
+    flex-direction: row;
+    margin-top: 180px;
+    padding-inline: 9%;
+  
+
+    @media (max-width:950px) {
+        flex-direction: column;
+        margin-top: 80px;
+        
+    }
+
+    
+}

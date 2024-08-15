@@ -4,6 +4,10 @@ import { darkActions } from "./store/slice/darkModeSlice";
 import { Outlet } from "react-router-dom";
 import MobileNav from "./components/MobileNav/MobileNav";
 import Description from "./components/Description/Description";
+import ThreeImages from "./components/ThreeImages/ThreeImages";
+import Services from "./components/Services/Services";
+import AboutUs from "./components/AboutUs/AboutUs";
+import Footer from "./components/Footer/Footer";
 
 
 function App() {
@@ -15,11 +19,15 @@ function App() {
       <Nav /> 
       <MobileNav />
       <Description />
+      <ThreeImages />
+      <Services />
+      <AboutUs />
+      <Footer />
       <div> 
         <Outlet />
       </div>
       <button onClick={() => dispatch(darkActions.switchToDark())} 
-        style={{  position: 'absolute', bottom: '0',zIndex:'100' }}>
+        style={{  marginTop:'100px' }}>
         Dark Mode
       </button>
     </div>

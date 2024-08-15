@@ -38,7 +38,7 @@ function MobileNav() {
           <span className={`navbar-toggler-icon  ${isDark ? 'darkk':'whitee'}`}></span>
         </button>
         <div
-          className="offcanvas offcanvas-end"
+          className="offcanvas offcanvas-start"
           tabIndex="-1"
           id="offcanvasNavbar"
           aria-labelledby="offcanvasNavbarLabel"

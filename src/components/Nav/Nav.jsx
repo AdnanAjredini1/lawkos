@@ -1,4 +1,3 @@
-import React from "react";
 import { Link } from "react-router-dom";
 import navIcon from "../Nav/nav-assets/nav-main-icon.svg";
 import { useSelector } from "react-redux";
@@ -10,12 +9,15 @@ import arrowDown from "../Nav/nav-assets/downArrow.svg";
 import ServicesMenu from "./ServicesMenu";
 import ResourcesMenu from "./ResourcesMenu";
 
+
 const Nav = () => {
   const isDark = useSelector((state) => state.dark.isDark);
   console.log(isDark);
 
+  
+
   return (
-    <div id="navv">
+    <div id="navv" >
       <div className="logoo">
         {isDark ? (
           <Link to="/">

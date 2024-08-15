@@ -5,7 +5,7 @@
             grid-template-columns: 1fr 1fr;
             position: fixed;
             background: #fff;
-            top:4.75vw;
+            top:5vw;
             overflow: hidden;
             width: 100%;
             height: fit-content;
@@ -16,7 +16,7 @@
             z-index: 15;
             filter: drop-shadow(0px 15px 20px rgba(0,0,0,0.1 ));
             @media(max-width:1470px) {
-                top: 5.2vw;
+               top: 6.2vw;
             }
                .resources-left-part{
                 padding-top: 1%;
