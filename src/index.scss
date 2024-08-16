@@ -70,7 +70,11 @@ li {
     display: none;
   }
 }
-
+.nav-scrolled{
+ 
+  box-shadow: rgba(70, 69, 69, 0.2) 0px 2px 5px 0px;
+  padding-bottom: 10px;
+}
 #navv {
   position: fixed;
   top: 0;
@@ -87,7 +91,7 @@ li {
     display: none;
   }
 
-
+  
 
   .nav-rightPart {
     display: flex;
@@ -107,6 +111,7 @@ li {
       flex-direction: column;
       margin-left: 0.5rem;
       margin-right: clamp(0.6rem,1vw,1.2rem);
+      padding-right: 20px;
       height: 2vw;
 
       p {
@@ -131,9 +136,9 @@ li {
     }
 
     .contact-button {
-      width: clamp(100px,8vw,150px) ;
+      width: clamp(100px,8.5vw,180px) ;
 
-      height: clamp(35px, 3vw, 54px);
+      height: clamp(35px, 2.9vw, 50px);
       border-radius: 28px;
       background: var(--contact-us-button-color);
       color: #ffffff;

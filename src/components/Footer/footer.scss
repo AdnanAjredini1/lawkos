@@ -45,10 +45,16 @@
                     font-style: normal;
                     text-align: left;
                     margin-bottom: 50px;
+
+                    @media (max-width:1097px) {
+                        font-size: 18px;
+
+                    }
+
                 }
 
                 .subscribe-input {
-                    width: 332px;
+                    width: 19vw;
                     height: 58px;
                     border-color: #ffffff;
                     border-width: 0.5px;
@@ -60,6 +66,16 @@
                     padding-left: 50px;
                     padding-top: 5px;
                     color: #FFFFFF;
+
+                    @media (max-width:1097px) {
+                        width: 260px;
+
+                    }
+
+                    @media (max-width:1497px) {
+                        padding-left: 15px;
+
+                    }
 
                 }
 
@@ -76,12 +92,20 @@
                 .subscribe-button {
                     position: absolute;
                     left: 62%;
-
-                    width: 134px;
+                    color: #FFFFFF;
+                    font-size: 16px;
+                    font-weight: normal;
+                    line-height: 22px;
+                    font-style: normal;
+                    width: 138px;
                     height: 58px;
                     border-radius: 29px;
                     background: #a67b48;
                     z-index: 4;
+
+                    @media (max-width:600px) {
+                        width: 125px;
+                    }
 
 
                 }
@@ -121,7 +145,7 @@
             flex-direction: row;
             flex-wrap: wrap;
             gap: clamp(70px, 12vw, 170px);
-
+            height: fit-content;
             .rowww {
                 .titleee {
                     font-size: 20px;
@@ -139,30 +163,37 @@
         }
     }
 
-    .second-row {
+    .second-rowww {
         margin-top: 50px;
         display: flex;
-        flex-wrap: wrap;
-        align-items: center;
+        flex-direction: row;
+        // flex-wrap: wrap;
+      
+        // align-items: center;
         padding-bottom: 30px;
-        
 
-
-        img {
-            width: 28px;
-            margin-bottom: -10px;
+        .connect-p {
+            padding-top: 25px;
+            margin-right: 50px;
+            
         }
 
-        .number {
+        // img {
+        //     width: 28px;
+        //     margin-bottom: -10px;
+        // }
+
+        .numberrr {
             display: flex;
             flex-direction: column;
             margin-left: 0.5rem;
-            margin-right: 1.2rem;
+            // margin-right: 1.2rem;
             height: 2vw;
+            width: 200px;
 
-            p {
-                margin: 0;
-            }
+            // p {
+            //     margin: 0;
+            // }
 
 
             .number-n {
@@ -182,5 +213,9 @@
         }
     }
 
-
+    connect-p {
+        padding-top: 25px;
+        margin-right: 50px;
+        
+    }
 }

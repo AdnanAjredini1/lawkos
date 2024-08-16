@@ -8,16 +8,37 @@ import arrowDownDark from "../Nav/nav-assets/arrow-down-dark.svg";
 import arrowDown from "../Nav/nav-assets/downArrow.svg";
 import ServicesMenu from "./ServicesMenu";
 import ResourcesMenu from "./ResourcesMenu";
+import { useEffect, useState } from "react";
 
 
 const Nav = () => {
   const isDark = useSelector((state) => state.dark.isDark);
   console.log(isDark);
+  
+
+
+  const [navbarBackground, setNavbarBackground] = useState(false); 
+
+  const handleScroll = () => {
+    const scrollTop = window.scrollY;
+    if (scrollTop > 50) {
+      setNavbarBackground(true);
+    } else {
+      setNavbarBackground(false);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   
 
   return (
-    <div id="navv" >
+    <div id="navv" className={navbarBackground ? "nav-scrolled" : ""}>
       <div className="logoo">
         {isDark ? (
           <Link to="/">

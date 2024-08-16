@@ -34,7 +34,11 @@
   
   .item-mob {
     border-bottom: 2px solid #a67b48;
-    
+    border-left: 8px solid  transparent;
+    padding-inline: 6px;
+     &:hover{
+      border-left: 8px solid  #292520 ;
+     }
   }
 
   .item-mob:last-child{
@@ -44,15 +48,19 @@
   .mobileBtn {
     margin-top: 50px;
     color: white;
-    background-color: #a67b48 ;
+    background-color: #292520 ;
     width: 200px;
     margin-left: 20%;
     height: 60px;
     font-weight: 600;
+    
     @media (max-width:330px) {
       margin-left: 14%;
       
     }
+    
+
+    
 
     // .li-drop {
     //   border-bottom: 2px solid #a67b48;

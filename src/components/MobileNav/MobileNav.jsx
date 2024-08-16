@@ -5,12 +5,33 @@ import { useSelector } from "react-redux";
 import navIcon from '../Nav/nav-assets/nav-main-icon.svg';
 import navIconDark from '../Nav/nav-assets/nav-icon-dark.svg';
 import { Link } from "react-router-dom";
+import { useEffect, useState } from "react";
 
 
 function MobileNav() {
   const isDark = useSelector((state) => state.dark.isDark);
+
+
+  const [navbarBackground, setNavbarBackground] = useState(false); 
+
+  const handleScroll = () => {
+    const scrollTop = window.scrollY;
+    if (scrollTop > 50) {
+      setNavbarBackground(true);
+    } else {
+      setNavbarBackground(false);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
-    <nav className="navbar  fixed-top mobileNav">
+    <nav className={`navbar  fixed-top mobileNav ${navbarBackground ? 'nav-scrolled':"" }`}>
       <div className="container-fluid">
         <Link className="navbar-brand mobileTitle" to="/" >
         {isDark ? (
