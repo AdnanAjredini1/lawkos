@@ -1,24 +1,28 @@
-.clients-wrapper{
- 
-    
-    margin-top: 150px;
+.clients-wrapper {
+    margin-top: 350px;
     height: 913px;
- 
     background: var(--bg-clients);
-
-    background-size: cover; 
+    background-size: cover;
     background-position: center;
 
+    .text {
+        text-align: center;
+        font-size: 75px;
+        font-weight: normal;
+        line-height: 76px;
+        font-style: normal;
+        margin-bottom: 400px;
+      
+     
+    }
 
-   
-    
 
-    .cards-div{
-       
+
+    .cards-div {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         width: 100%;
     }
- 
+
 }

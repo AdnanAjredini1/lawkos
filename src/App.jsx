@@ -30,7 +30,7 @@ function App() {
       <PracticArea />
       <Cards />
       <BigImage />
-      <Clients />
+      {/* <Clients /> */}
       <Footer />
     
       {/* <div> 
