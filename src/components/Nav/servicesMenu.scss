@@ -15,7 +15,7 @@
     position: absolute;
     left: 0; 
     z-index: 15;
-    padding-top: 10px;
+    // padding-top: 10px;
     @media(max-width:1470px) {
         top: 5.4vw;
     }
@@ -89,7 +89,7 @@
   
     .services-items {
         display: grid;
-        grid-template-columns: repeat(auto-fit,minmax(clamp(150px,14.5vw,285px), 1fr));
+        grid-template-columns: repeat(auto-fit,minmax(clamp(150px,14.5vw,287px), 1fr));
    
       
       
@@ -103,6 +103,9 @@
       flex-wrap: wrap;
       background: var(--services-right-bg-color);
       
+     
+      
+      
 
        .wraper {
         display: flex;
@@ -112,6 +115,8 @@
         margin-left: 10%;
         text-align: left;
         padding-right: 20%;
+        
+       
        
         .title{
             font-size: clamp(20px,2vw,26px) ;

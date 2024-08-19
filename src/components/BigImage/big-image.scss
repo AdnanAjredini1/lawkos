@@ -1,0 +1,42 @@
+.image-wrapper {
+    position: relative;
+    margin-inline: 9%;
+    margin-top: 40px;
+
+    // width: ;
+    .big {
+        width: 82vw;
+    }
+
+    .div-icon {
+        position: absolute;
+        width: 110px;
+        height: 110px;
+        background-color: #a67b48;
+        border-radius: 50%;
+        text-align: center;
+        top: 5%;
+        right: 4%;
+
+        @media (max-width:880px) {
+            width: 90px;
+            height: 90px;
+        }
+        @media (max-width:586px) {
+            width: 65px;
+            height: 65px;
+        }
+
+        img {
+            margin-top: 32px;
+            width: 54px;
+            height: 54px;
+
+            @media (max-width:880px) {
+                width: 45px;
+                height: 45px;
+                margin-top: 20px;
+            }
+        }
+    }
+}

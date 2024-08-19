@@ -1,10 +1,11 @@
 .footer-wrapper {
     display: flex;
     flex-direction: column;
-    padding-inline: 10%;
+    padding-inline: 6%;
     background-color: #000000;
+    margin-top: 100px;
     padding-top: 4%;
-    padding-bottom: 4%;
+
 
     @media (max-width:950px) {
         padding-top: 10%;
@@ -28,7 +29,7 @@
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        gap: 16vw;
+        gap: 10vw;
 
         .left-part-first {
             display: flex;
@@ -54,12 +55,12 @@
                 }
 
                 .subscribe-input {
-                    width: 19vw;
+                    width: clamp(289px, 26vw, 352px);
                     height: 58px;
                     border-color: #ffffff;
                     border-width: 0.5px;
                     border-style: solid;
-                    border-radius: 29px;
+                    border-radius: 29px 0 0 29px;
                     background: #2f3031;
                     z-index: 2;
                     outline: none;
@@ -67,8 +68,8 @@
                     padding-top: 5px;
                     color: #FFFFFF;
 
-                    @media (max-width:1097px) {
-                        width: 260px;
+                    @media (max-width:396px) {
+                        border-radius: 29px;
 
                     }
 
@@ -91,20 +92,42 @@
 
                 .subscribe-button {
                     position: absolute;
-                    left: 62%;
+                    left: 49%;
                     color: #FFFFFF;
                     font-size: 16px;
                     font-weight: normal;
                     line-height: 22px;
                     font-style: normal;
-                    width: 138px;
+                    width: 129px;
                     height: 58px;
                     border-radius: 29px;
                     background: #a67b48;
                     z-index: 4;
 
-                    @media (max-width:600px) {
-                        width: 125px;
+
+                    @media (max-width:1304px) {
+                        left: 40%;
+
+                    }
+
+
+                    @media (max-width:1060px) {
+                        left: 35%;
+
+                    }
+
+                    @media (max-width:902px) {
+                        left: 38%;
+
+                    }
+
+                    @media (max-width:606px) {
+                        left: 45%;
+
+                    }
+                    @media (max-width:520px) {
+                        left: 58%;
+
                     }
 
 
@@ -146,6 +169,7 @@
             flex-wrap: wrap;
             gap: clamp(70px, 12vw, 170px);
             height: fit-content;
+
             .rowww {
                 .titleee {
                     font-size: 20px;
@@ -158,42 +182,48 @@
 
                 .elementtt {
                     font-size: 17px;
+
+                    &:hover {
+                        color: #d6d0d0;
+                        cursor: pointer;
+                    }
                 }
             }
         }
     }
 
-    .second-rowww {
-        margin-top: 50px;
+    .part2 {
         display: flex;
         flex-direction: row;
-        // flex-wrap: wrap;
-      
-        // align-items: center;
+        flex-wrap: wrap;
+        margin-top: 50px;
+
+    }
+
+    .second-rowww {
+
+        display: flex;
+        flex-direction: row;
         padding-bottom: 30px;
 
         .connect-p {
             padding-top: 25px;
             margin-right: 50px;
-            
+
         }
 
-        // img {
-        //     width: 28px;
-        //     margin-bottom: -10px;
-        // }
+
 
         .numberrr {
             display: flex;
             flex-direction: column;
             margin-left: 0.5rem;
-            // margin-right: 1.2rem;
             height: 2vw;
             width: 200px;
 
-            // p {
-            //     margin: 0;
-            // }
+            p {
+                margin: 0;
+            }
 
 
             .number-n {
@@ -213,9 +243,95 @@
         }
     }
 
-    connect-p {
-        padding-top: 25px;
-        margin-right: 50px;
-        
+    .connect-p {
+        margin-inline: 2vw;
+        font-size: 17px;
+        font-weight: normal;
+        line-height: 22px;
+        font-style: normal;
+        text-align: center;
+        color: #ebebeb;
+
+    }
+
+    .third-row {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-top: 100px;
+        margin-bottom: 20px;
+
+        .last-line {
+            width: 100%;
+            height: 1px;
+            background-color: #FFFFFF;
+            margin-bottom: 20px;
+        }
+
+        .last-row-footer {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            flex-wrap: wrap;
+
+            .p-first-lats-row{
+                padding-right: 120px;
+                @media (max-width:550px) {
+                    padding-right: 0;
+                    margin-left: 50px;
+                }
+
+                @media (max-width:400px) {
+                    padding-right: 0;
+                    margin-left: 20px;
+                }
+            }
+
+            .p-lats-row{
+                margin-left: -400px;
+                @media (max-width:770px) {
+                    margin-left: 0;
+                //    
+                }
+            }
+
+            .switch-mode-div {
+
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                cursor: pointer;
+                width: 60px;
+                height: fit-content;
+               
+
+
+                border-color: #707070;
+                border-width: 1px;
+                border-style: solid;
+                border-radius: 19px;
+
+                .iconSwitch {
+                    
+                    width: 30px;
+                    height: 30px;
+                    text-align: center;
+                    border-radius: 19px;
+                    padding-inline: 4px;
+
+                  
+                }
+
+                .switchButton{
+                    background: #404142;
+                    // border-radius: 100%;
+                    text-align: center;
+                    width: 30px;
+                    height: 30px;
+                    
+                }
+
+            }
+        }
     }
 }

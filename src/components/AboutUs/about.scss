@@ -3,7 +3,7 @@
     flex-direction: row;
     margin-top: 180px;
     padding-inline: 8%;
-    gap: 19vw;
+    gap: 22.5vw;
     margin-bottom: 50px;
 
 
@@ -11,7 +11,7 @@
         flex-direction: column;
         margin-top: 80px;
         gap: 50px;
-        // padding-inline: 4%;
+        
 
     }
 
@@ -48,6 +48,7 @@
     }
 
     .right-part-aboutUs {
+        display: flex;
         p {
             max-width: 1076px;
             font-size: clamp(35px,3vw,63px);
@@ -63,17 +64,23 @@
         button {
             width: 201px;
             height: 57px;
-
+            // position: absolute;
+            // bottom: 11%;
+            // right:2rem;
             border-color: #000000;
             border-width: 1px;
             border-style: solid;
             border-radius: 43px;
-
+            
             font-size: 17px;
             font-weight: 500;
             line-height: 25px;
             font-style: normal;
-            background: #ffffff
+            background: #ffffff;
+            // @media (max-width: 1056px) {
+            //     right: 20%;
+            //     bottom: -9%;
+            // }
         
         }
 

@@ -1,0 +1,86 @@
+.practice-area {
+    margin-top: 140px;
+    margin-inline: 9%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    @media (max-width:368px) {
+        display: flex;
+        flex-direction: column;
+    }
+
+}
+
+
+
+.practice-title {
+    font-family: "Playfair Display";
+    font-size: clamp(25px, 5.2vw, 109px);
+    font-weight: normal;
+    line-height: 110px;
+    font-style: normal;
+    text-align: left;
+
+    @media (max-width:368px) {
+        line-height: 30px;
+    }
+}
+
+.practice-line {
+    width: 200px;
+    height: 2px;
+    background-color: var(--primary-text-color);
+
+
+    @media (min-width:950px) {
+        margin-top: 55px;
+    }
+
+    @media (max-width:950px) {
+
+        width: 150px;
+    }
+
+
+}
+
+.circle-area {
+    position: relative;
+    width: 149px;
+    height: 149px;
+    border: 1px solid var(--primary-text-color);
+    border-radius: 50%;
+    @media (max-width:479px) {
+        margin-top: 20px;
+        width: 125px;
+        height: 125px;
+    }
+
+
+    .img1 {
+        position: absolute;
+        width: 87.9px;
+        height: 33.1px;
+        left: 15%;
+        top: 9%;
+        @media (max-width:479px) {
+            width: 67.9px;
+        height: 23.1px;
+        left:21%;
+        }
+
+    }
+
+    .img2 {
+        position: absolute;
+        width: 97.9px;
+        height: 43.1px;
+        left: 18%;
+        bottom: 31%;
+        @media (max-width:479px) {
+            width: 77.9px;
+        height: 33.1px;
+        }
+
+    }
+}

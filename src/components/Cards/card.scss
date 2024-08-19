@@ -1,0 +1,36 @@
+.carddd {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-width: 437px;
+    gap: 45px;
+    margin-bottom: 70px;
+
+    @media (max-width:550px) {
+        max-width: 330px;
+
+    }
+
+    @media (max-width:400px) {
+        max-width: 280px;
+
+    }
+
+    .title {
+        font-size: 35px;
+        font-weight: 500;
+        line-height: 57px;
+        font-style: normal;
+        text-align: left;
+    }
+
+    .description {
+        font-size: 18px;
+        font-weight: normal;
+        line-height: 30px;
+        font-style: normal;
+        text-align: left;
+    }
+
+
+}
