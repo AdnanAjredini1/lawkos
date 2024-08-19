@@ -20,6 +20,7 @@ html {
   --resources-dots-color:#b8b7b7;
   --contact-us-button-color:#292520;
   --toggler-btn-url:"data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='%23000000' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E";
+  --bg-clients:  url('./components/Clients/clients-assets/dark.svg');
 
 }
 
@@ -42,6 +43,8 @@ html {
   --resources-dots-color:#fffdfd;
   --contact-us-button-color:#746859;
   --toggler-btn-url:"data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='%23ffffff' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E";
+  --bg-clients:  url('./components/Clients/clients-assets/white.svg');
+
  
 
    
@@ -80,11 +83,11 @@ li {
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 10;
+  z-index: 11110;
   display: flex;
   align-items: center;
   justify-content: space-around;
-  padding: 2vw 2% 5px;
+  padding: 1.6vw 2% 10px;
   background-color: var(--background-color);
   // padding-top: 2%;
   @media (max-width:950px) {

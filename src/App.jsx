@@ -11,6 +11,7 @@ import Experience from "./components/Experience/Experience";
 import PracticArea from "./components/PracticArea/PracticArea";
 import Cards from "./components/Cards/Cards";
 import BigImage from "./components/BigImage/BigImage";
+import Clients from "./components/Clients/Clients";
 
 
 function App() {
@@ -29,6 +30,7 @@ function App() {
       <PracticArea />
       <Cards />
       <BigImage />
+      <Clients />
       <Footer />
     
       {/* <div> 

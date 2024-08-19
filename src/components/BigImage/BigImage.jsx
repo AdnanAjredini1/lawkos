@@ -9,7 +9,7 @@ function BigImage() {
       <div className="div-icon">
         <img src={icon} />
       </div>
-      <p>
+      <p className="text">
         From family law to personal injury, we treat your case with the care it
         deserves. Let's protect what matters most to you.
       </p>

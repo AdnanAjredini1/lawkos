@@ -1,0 +1,24 @@
+.clients-wrapper{
+ 
+    
+    margin-top: 150px;
+    height: 913px;
+ 
+    background: var(--bg-clients);
+
+    background-size: cover; 
+    background-position: center;
+
+
+   
+    
+
+    .cards-div{
+       
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+    }
+ 
+}

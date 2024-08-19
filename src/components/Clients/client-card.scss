@@ -1,0 +1,34 @@
+.card-wrapper {
+    position: relative;
+    margin-top: 170px;
+    display: flex;
+    flex-direction: column;
+    max-width: 635px;
+    gap: 75px;
+    margin-inline: 9%;
+    z-index: 15;
+
+    
+
+
+    .quotes-div {
+        position: relative;
+
+        .quotes {
+            position: absolute;
+            bottom: -4%;
+            left: 13%;
+            width: 70px;
+            height: 50px;
+        }
+
+    }
+
+
+
+    .clients-line {
+        height: 2px;
+        width: 170px;
+        background-color:var(--primary-text-color);
+    }
+}

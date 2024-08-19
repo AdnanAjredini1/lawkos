@@ -2,10 +2,47 @@
     position: relative;
     margin-inline: 9%;
     margin-top: 40px;
+    @media (max-width:606px) {
+     
+       margin-top: -10px;
+        
+    }
 
-    // width: ;
+    
+
     .big {
         width: 82vw;
+    }
+
+    .text {
+        position: absolute;
+        top: 7%;
+        left: 3%;
+        max-width: 654px;
+        font-size: 40px;
+        font-weight: normal;
+        line-height: 55px;
+        font-style: normal;
+        text-align: left;
+        color: #000000;
+        @media (max-width:1454px) {
+            max-width: 454px;
+            font-size: 30px;
+        }   
+         @media (max-width:1086px) {
+            max-width: 254px;
+            font-size: 20px;
+            line-height: 25px;
+
+        }
+
+        @media (max-width:606px) {
+            max-width: 180px;
+            font-size: 15px;
+            line-height: 18px;
+            
+        }
+
     }
 
     .div-icon {
