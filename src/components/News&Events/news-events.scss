@@ -1,0 +1,69 @@
+.news-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 354px 354px;
+    gap: 40px;
+
+    margin-inline: 9%;
+    margin-top: 150px;
+
+    @media (max-width:1400px) {
+        grid-template-columns: 1.3fr 1fr;
+
+    }
+    @media (max-width:1164px) {
+        grid-template-columns: auto;
+        grid-template-rows: 1fr 1fr 1fr;
+        margin-top: 100x;
+
+    }
+
+    .img1 {
+        background-image: url("../News&Events/news&eevents-assets/firstImage.png");
+        background-size: cover;
+        background-position: center;
+        border: 1px dashed #000000;
+        border-radius: 30px;
+        grid-row: span 2;
+   
+        @media (max-width:1164px) {
+            height: 27vw;
+            grid-row: span 1;
+        }
+        @media (max-width:642px) {
+            height: 180px;
+            
+        }
+    }
+
+    .img2 {
+        background: url("../News&Events/news&eevents-assets/nuno-marques-0GbrjL3.png");
+        background-size: cover;
+        background-position: center;
+        border: 1px dashed #000000;
+        border-radius: 30px;
+        @media (max-width:1164px) {
+            height: 27vw;
+        }
+        @media (max-width:642px) {
+            height: 180px;
+            
+        }
+    }
+
+
+    .img3 {
+        background: url("../News&Events/news&eevents-assets/boss.png");
+        background-size: cover;
+        background-position: center;
+        border: 1px solid #000000;
+        border-radius: 30px;
+        @media (max-width:1164px) {
+            height: 27vw;
+        }
+        @media (max-width:642px) {
+            height: 180px;
+            
+        }
+    }
+}

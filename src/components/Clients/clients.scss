@@ -1,17 +1,30 @@
 .clients-wrapper {
-    margin-top: 350px;
+    margin-top: 450px;
     height: 913px;
     background: var(--bg-clients);
     background-size: cover;
     background-position: center;
+    position: relative;
 
     .text {
-        text-align: center;
-        font-size: 75px;
+        position: absolute;
+       
+        font-size: clamp(24px,4vw,72px);
         font-weight: normal;
         line-height: 76px;
         font-style: normal;
-        margin-bottom: 400px;
+        top: -3vw;
+        left: 22vw;
+        @media (max-width:522px) {
+            left: 14%;
+        }
+
+        @media (max-width:394px) {
+            top: -1vw;
+            left: 9%;
+            font-size: 20px;
+            line-height: 20px;
+        }
       
      
     }

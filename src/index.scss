@@ -181,11 +181,17 @@ li {
           background-color: #a67b48;
           position: relative;
           left: 30%;
-          top: 26%;
+          top: 27%;
           z-index: 40;
           @media (max-width:1402px) {
             height: 26px;
             top: 30%;
+            height: 20px;
+            
+          }
+          @media (max-width:1702px) {
+            height: 24px;
+            top: 10%;
             height: 20px;
             
           }
@@ -225,13 +231,17 @@ li {
         background-color: #a67b48;
         position: relative;
         left: 30%;
-        top: 26%;
+        top: 27%;
         z-index: 40;
         @media (max-width:1402px) {
           height: 26px;
           top: 34%;
           height: 20px;
-
+        }
+        @media (max-width:1702px) {
+          height: 24px;
+          top: 10%;
+          height: 20px;
           
         }
       }

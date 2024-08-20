@@ -12,6 +12,7 @@ import PracticArea from "./components/PracticArea/PracticArea";
 import Cards from "./components/Cards/Cards";
 import BigImage from "./components/BigImage/BigImage";
 import Clients from "./components/Clients/Clients";
+import NewsEvents from "./components/News&Events/NewsEvents";
 
 
 function App() {
@@ -27,10 +28,12 @@ function App() {
       <Services />
       <AboutUs />
       <Experience />
-      <PracticArea />
+      <PracticArea title={"Our practice area"}/>
       <Cards />
       <BigImage />
-      {/* <Clients /> */}
+      <Clients />
+      <PracticArea title={"News & Events"}/>
+      <NewsEvents />
       <Footer />
     
       {/* <div> 

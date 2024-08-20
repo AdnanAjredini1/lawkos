@@ -6,12 +6,12 @@ import arrow from '../PracticArea/practic-area-assets/Group 34.svg'
 import arrow1 from '../PracticArea/practic-area-assets/Group 34(1).svg'
 
 
-function PracticArea() {
+function PracticArea({title}) {
     const isDark = useSelector(state => state.dark.isDark)
     return (
         <div className="practice-area">
         <div className='pr'>
-            <p className='practice-title'>Our practice area</p>
+            <p className='practice-title'>{title}</p>
             <div className="practice-line"></div>
         </div>
             <div className='circle-area'>

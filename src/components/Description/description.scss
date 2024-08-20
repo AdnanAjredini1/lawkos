@@ -21,10 +21,12 @@
         }
         @media (max-width:1024px) {
             font-size: 54px;
+            margin-top: 5px;
             
         }
         @media (max-width:950px) {
             font-size: clamp(40px,12vw,81px);
+            margin-top: -80px;
             
         }
 

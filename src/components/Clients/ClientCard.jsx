@@ -5,14 +5,14 @@ function ClientCard({ img, description, name, position }) {
   return (
     <div className="card-wrapper">
       <div className="quotes-div">
-        <img src={img} />
+        <img className="profile-pic" src={img} />
         <img className="quotes" src={quotes} />
       </div>
-      <p>{description}</p>
+      <p className="description">{description}</p>
       <div className="clients-line"></div>
       <div>
-        <p>{name}</p>
-        <p>{position}</p>
+        <p className="name">{name}</p>
+        <p className="position">{position}</p>
       </div>
     </div>
   );
