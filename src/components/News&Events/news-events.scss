@@ -11,6 +11,7 @@
         grid-template-columns: 1.3fr 1fr;
 
     }
+
     @media (max-width:1164px) {
         grid-template-columns: auto;
         grid-template-rows: 1fr 1fr 1fr;
@@ -25,15 +26,23 @@
         border: 1px dashed #000000;
         border-radius: 30px;
         grid-row: span 2;
-   
+        position: relative;
+
         @media (max-width:1164px) {
             height: 27vw;
             grid-row: span 1;
         }
+
         @media (max-width:642px) {
             height: 180px;
-            
+
         }
+    }
+
+    .imagesClases {
+        display: flex;
+        justify-content: start;
+        align-items: end;
     }
 
     .img2 {
@@ -42,28 +51,75 @@
         background-position: center;
         border: 1px dashed #000000;
         border-radius: 30px;
+        position: relative;
+
+
         @media (max-width:1164px) {
             height: 27vw;
         }
+
         @media (max-width:642px) {
             height: 180px;
-            
+
         }
     }
 
+    .text-div {
+        padding-left: 7%;
+        padding-bottom: 6%;
+        @media (max-width:1164px) {
+            padding-bottom: 3%;
+    
+        }
+
+        .date {
+            font-size: clamp(10px,1vw,15px);
+            font-weight: normal;
+            line-height: 30px;
+            font-style: normal;
+            text-align: left;
+            color: #ffffff;
+
+        }
+
+        .title {
+            font-size: clamp(20px,2vw,31px);
+            font-weight: bold;
+            line-height: 42px;
+            font-style: normal;
+            text-align: left;
+            color: #ffffff;
+            max-width: 511px;
+
+
+        }
+
+        .titleeee {
+            font-size: clamp(18px,2vw,25px);
+            font-weight: bold;
+            line-height: 34px;
+            font-style: normal;
+            text-align: left;
+            color: #ffffff;
+
+        }
+    }
 
     .img3 {
         background: url("../News&Events/news&eevents-assets/boss.png");
         background-size: cover;
         background-position: center;
-        border: 1px solid #000000;
+        border: 1px dashed #000000;
         border-radius: 30px;
+        position: relative;
+
         @media (max-width:1164px) {
             height: 27vw;
         }
+
         @media (max-width:642px) {
             height: 180px;
-            
+
         }
     }
 }

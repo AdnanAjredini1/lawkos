@@ -66,8 +66,10 @@
         font-style: normal;
         text-align: left;
         padding-top: 4%;
+        margin-bottom: 80px;
         @media (max-width:950px) {
             max-width: 400px;
+            margin-bottom: 20px;
             
             
         }

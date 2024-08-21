@@ -34,6 +34,7 @@ function App() {
       <Clients />
       <PracticArea title={"News & Events"}/>
       <NewsEvents />
+      {/* <Team /> */}
       <Footer />
     
       {/* <div> 

@@ -42,6 +42,12 @@
             padding-inline: 2%;
             border: 2px solid transparent;
             position: relative;
+            .title{
+                margin-top: 15px;
+                @media (max-width:1368px) {
+                  margin-top: 5px;
+                }
+            }
             &:hover {
                 border:2px solid #a67b48;
                 border-radius: 15px;
@@ -102,6 +108,7 @@
       justify-content: center;
       flex-wrap: wrap;
       background: var(--services-right-bg-color);
+      gap: 40px;
       
      
       
@@ -114,7 +121,8 @@
         max-width: 351px;
         margin-left: 10%;
         text-align: left;
-        padding-right: 20%;
+        padding-right: 5%;
+
         
        
        
@@ -130,6 +138,7 @@
        width: 50px;
        height: 2px;
        background-color: var(--primary-text-color);
+       margin-bottom: 20px;
       }
 
     

@@ -160,6 +160,7 @@ li {
     flex-direction: row;
     flex-wrap: wrap;
     gap: clamp(30px,3vw,56px);
+    margin-right: -60px;
     @media (max-width:950px) {
       display: none;
     }
