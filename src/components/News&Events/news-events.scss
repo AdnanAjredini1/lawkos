@@ -7,16 +7,14 @@
     margin-inline: 9%;
     margin-top: 150px;
 
-    @media (max-width:1400px) {
+    @media (max-width: 1400px) {
         grid-template-columns: 1.3fr 1fr;
-
     }
 
-    @media (max-width:1164px) {
+    @media (max-width: 1164px) {
         grid-template-columns: auto;
         grid-template-rows: 1fr 1fr 1fr;
         margin-top: 100x;
-
     }
 
     .img1 {
@@ -28,14 +26,13 @@
         grid-row: span 2;
         position: relative;
 
-        @media (max-width:1164px) {
+        @media (max-width: 1164px) {
             height: 27vw;
             grid-row: span 1;
         }
 
-        @media (max-width:642px) {
+        @media (max-width: 642px) {
             height: 180px;
-
         }
     }
 
@@ -53,55 +50,48 @@
         border-radius: 30px;
         position: relative;
 
-
-        @media (max-width:1164px) {
+        @media (max-width: 1164px) {
             height: 27vw;
         }
 
-        @media (max-width:642px) {
+        @media (max-width: 642px) {
             height: 180px;
-
         }
     }
 
     .text-div {
         padding-left: 7%;
         padding-bottom: 6%;
-        @media (max-width:1164px) {
+        @media (max-width: 1164px) {
             padding-bottom: 3%;
-    
         }
 
         .date {
-            font-size: clamp(10px,1vw,15px);
+            font-size: clamp(10px, 1vw, 15px);
             font-weight: normal;
             line-height: 30px;
             font-style: normal;
             text-align: left;
             color: #ffffff;
-
         }
 
         .title {
-            font-size: clamp(20px,2vw,31px);
+            font-size: clamp(20px, 2vw, 31px);
             font-weight: bold;
             line-height: 42px;
             font-style: normal;
             text-align: left;
             color: #ffffff;
             max-width: 511px;
-
-
         }
 
         .titleeee {
-            font-size: clamp(18px,2vw,25px);
+            font-size: clamp(18px, 2vw, 25px);
             font-weight: bold;
             line-height: 34px;
             font-style: normal;
             text-align: left;
             color: #ffffff;
-
         }
     }
 
@@ -113,13 +103,12 @@
         border-radius: 30px;
         position: relative;
 
-        @media (max-width:1164px) {
+        @media (max-width: 1164px) {
             height: 27vw;
         }
 
-        @media (max-width:642px) {
+        @media (max-width: 642px) {
             height: 180px;
-
         }
     }
 }

@@ -6,15 +6,16 @@ import arrow from '../PracticArea/practic-area-assets/Group 34.svg'
 import arrow1 from '../PracticArea/practic-area-assets/Group 34(1).svg'
 
 
-function PracticArea({title}) {
+function PracticArea({title ,classes, textClasses}) {
     const isDark = useSelector(state => state.dark.isDark)
     return (
         <div className="practice-area">
         <div className='pr'>
             <p className='practice-title'>{title}</p>
             <div className="practice-line"></div>
+            <p className={`paragraph  ${textClasses}`}>Meet the brilliant minds behind LawKos. Our team of skilled lawyers and legal experts make LawKos your best choice for legal representation.</p>
         </div>
-            <div className='circle-area'>
+            <div className={`circle-area  ${classes}`}>
               { isDark ? <img className='img1' src={viewAllDark} /> : <img className='img1' src={viewAll}  /> 
               }  
               { isDark ? <img className='img2' src={arrow1} /> : <img className='img2' src={arrow}  /> 

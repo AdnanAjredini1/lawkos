@@ -1,0 +1,85 @@
+.cardsss-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    max-width: 481px;
+
+    .onHoverText {
+        position: absolute;
+        bottom: 0;
+        height: 187px;
+        background-color: white;
+        z-index: 100;
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 21px;
+        border-bottom-left-radius: 21px;
+       
+
+        transform: translateY(100%);
+
+        transition: transform 0.3s ease-in;
+        
+        z-index: 50;
+
+
+        .textHover {
+            padding-top: 30px;
+            padding-inline: 35px;
+            font-size: 17px;
+            font-weight: normal;
+            line-height: 27px;
+            font-style: normal;
+            text-align: left;
+            color: #000000;
+        }
+
+        .readMore {
+        
+            padding-inline: 35px;
+            font-size: 17px;
+            font-weight: normal;
+            line-height: 27px;
+            font-style: normal;
+            text-align: left;
+            color: #a67b48;
+        }
+    }
+
+
+    .imageDiv {
+        position: relative;
+        max-height: 639px;
+        overflow: hidden;
+        z-index: 10;
+
+        &:hover .onHoverText {
+            transform: translateY(0);
+            
+
+        }
+
+        img {
+            object-fit: cover;
+        }
+    }
+    .imageDiv:hover{
+        filter: drop-shadow(0px 3px 3px rgba(0,0,0,0.16 ));
+    }
+
+    .name {
+        font-size: 26px;
+        font-weight: bold;
+        line-height: 31px;
+        font-style: normal;
+        text-align: left;
+    }
+
+    .position {
+        font-size: 19px;
+        font-weight: normal;
+        line-height: 31px;
+        font-style: normal;
+        text-align: left;
+    }
+}

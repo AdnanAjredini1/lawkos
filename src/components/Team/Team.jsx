@@ -1,10 +1,11 @@
 import '../Team/team.scss'
-import Slide from "./Slider/Slider";
+import Carousel from './Slider/Carousel';
+
 
 function Team() {
     return (
         <div className="team-wrapper">
-            <Slide />
+            <Carousel />
         </div>
     );
 }

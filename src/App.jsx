@@ -1,5 +1,5 @@
-import {  useSelector } from "react-redux"
-import Nav from "./components/Nav/Nav"
+import { useSelector } from "react-redux";
+import Nav from "./components/Nav/Nav";
 import { Outlet } from "react-router-dom";
 import MobileNav from "./components/MobileNav/MobileNav";
 import Description from "./components/Description/Description";
@@ -13,30 +13,35 @@ import Cards from "./components/Cards/Cards";
 import BigImage from "./components/BigImage/BigImage";
 import Clients from "./components/Clients/Clients";
 import NewsEvents from "./components/News&Events/NewsEvents";
-
+import Team from "./components/Team/Team";
 
 function App() {
-  const isDark = useSelector(state => state.dark.isDark);
-
+  const isDark = useSelector((state) => state.dark.isDark);
 
   return (
-    <div className="appp" data-theme={isDark ? 'dark':""}>
-      <Nav /> 
+    <div className="appp" data-theme={isDark ? "dark" : ""}>
+      <Nav />
       <MobileNav />
       <Description />
       <ThreeImages />
       <Services />
       <AboutUs />
       <Experience />
-      <PracticArea title={"Our practice area"}/>
+      <PracticArea title={"Our practice area"} />
       <Cards />
       <BigImage />
+      <PracticArea
+        title="Meet our team"
+        classes="none"
+        textClasses="paragraphDisplay"
+      />
+      <Team />
       <Clients />
-      <PracticArea title={"News & Events"}/>
+      <PracticArea title={"News & Events"} />
       <NewsEvents />
-      {/* <Team /> */}
+
       <Footer />
-    
+
       {/* <div> 
         <Outlet />
       </div> */}
@@ -44,4 +49,4 @@ function App() {
   );
 }
 
-export default App
+export default App;
