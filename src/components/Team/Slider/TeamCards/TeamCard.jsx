@@ -15,7 +15,7 @@ function TeamCard({ photo, name, position, onHover, onHoverClasses }) {
           <p className="name">{name}</p>
           <p className="position">{position}</p>
         </div>
-        <div>
+        <div className="imagePlusDiv">
           <img src={plusIcon} />
         </div>
       </div>
