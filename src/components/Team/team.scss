@@ -1,4 +1,10 @@
 .team-wrapper{
     margin-top: 50px;
     margin-inline: 4%;
+    @media (max-width:1024px) {
+        margin-inline: 5%;
+    }
+    @media (max-width:600px) {
+        margin-inline: 12%;
+    }
 }

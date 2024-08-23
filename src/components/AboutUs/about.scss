@@ -64,9 +64,13 @@
         button {
             width: 201px;
             height: 57px;
+            position: relative;
+         
+            top: -18px;
             // position: absolute;
             // bottom: 11%;
             // right:2rem;
+           
             border-color: #000000;
             border-width: 1px;
             border-style: solid;

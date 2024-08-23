@@ -12,7 +12,7 @@ import img2 from "../team-assets/nussbaum-law-ea3STzN7Lw8-unsplash.png";
 import img3 from "../team-assets/nussbaum-law-IOvsEAEjnDE-unsplash.png";
 
 function CustomNextArrow(props) {
-  const { className, style, onClick, isDark } = props;
+  const { className, style, onClick, isDark,imageClass } = props;
   return (
     <div
       className={className}
@@ -27,16 +27,16 @@ function CustomNextArrow(props) {
       onClick={onClick}
     >
       {isDark ? (
-        <img src={rightDark} alt="next" />
+        <img src={rightDark} alt="next" className={imageClass} />
       ) : (
-        <img src={rightWhite} alt="next" />
+        <img src={rightWhite} alt="next" className={imageClass} />
       )}
     </div>
   );
 }
 
 function CustomPrevArrow(props) {
-  const { className, style, onClick, isDark } = props;
+  const { className, style, onClick, isDark, imageClass} = props;
   return (
     <div
       className={className}
@@ -51,9 +51,9 @@ function CustomPrevArrow(props) {
       onClick={onClick}
     >
       {isDark ? (
-        <img src={leftDark} alt="prev" />
+        <img src={leftDark} alt="prev" className={imageClass} />
       ) : (
-        <img src={leftWhite} alt="prev" />
+        <img src={leftWhite} alt="prev" className={imageClass}/>
       )}
     </div>
   );
@@ -67,8 +67,8 @@ function Carousel() {
 
     slidesToShow: 3,
     slidesToScroll: 1,
-    nextArrow: <CustomNextArrow isDark={isDark} />,
-    prevArrow: <CustomPrevArrow isDark={isDark} />,
+    nextArrow: <CustomNextArrow isDark={isDark} imageClass=' arrowWH' />,
+    prevArrow: <CustomPrevArrow isDark={isDark} imageClass=' arrowWH' />,
     initialSlide: 0,
     responsive:[
       {
@@ -78,7 +78,17 @@ function Carousel() {
           slidesToScroll: 1,
           infinite: true
          
+        },
+        
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          initialSlide: 2
         }
+
       }
     ]
   
@@ -94,6 +104,7 @@ function Carousel() {
               years. He has helped a lot of our clients achieve their
               goals with their cases..."
             onHoverClasses="onHoverText"
+            readMore="Read more"
             photo={img1}
           />
         </div>
@@ -103,6 +114,11 @@ function Carousel() {
             name="Arbenita Jashari"
             position="Attorney at law, Partner"
             photo={img2}
+            onHover="Labinot has been working with LawKos for over 10 
+              years. He has helped a lot of our clients achieve their
+              goals with their cases..."
+            onHoverClasses="onHoverText"
+            readMore="Read more"
           />
         </div>
 
@@ -111,6 +127,11 @@ function Carousel() {
             name="Festina Murati"
             position="Attorney at law"
             photo={img3}
+            onHover="Labinot has been working with LawKos for over 10 
+              years. He has helped a lot of our clients achieve their
+              goals with their cases..."
+            onHoverClasses="onHoverText"
+            readMore="Read more"
           />
         </div>
       </Slider>

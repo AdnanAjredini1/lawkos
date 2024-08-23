@@ -1,13 +1,13 @@
 import "../TeamCards/team-card.scss";
 import plusIcon from "../TeamCards/plus.svg";
-function TeamCard({ photo, name, position, onHover, onHoverClasses }) {
+function TeamCard({ photo, name, position, onHover, onHoverClasses, readMore }) {
   return (
     <div className="cardsss-wrapper">
       <div className="imageDiv">
         <img src={photo} />
         <div className={` ${onHoverClasses}`}>
           <p className="textHover">{onHover}</p>
-          <p className="readMore">Read more</p>
+          <p className="readMore">{readMore}</p>
         </div>
       </div>
       <div className="text-div-card">

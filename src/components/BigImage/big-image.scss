@@ -2,6 +2,7 @@
     position: relative;
     margin-inline: 9%;
     margin-top: 40px;
+    
   
     @media (max-width:606px) {
      
@@ -9,10 +10,23 @@
         
     }
 
+     @media (max-width:406px) {
+     
+      margin-inline: 0;
+        
+    }
+    
+
     
 
     .big {
         width: 82vw;
+         @media (max-width:406px) {
+     
+      width: 100%;
+      border-radius: 0;
+        
+    }
     }
 
     .text {

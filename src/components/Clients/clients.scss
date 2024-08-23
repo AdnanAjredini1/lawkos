@@ -1,10 +1,13 @@
 .clients-wrapper {
-    margin-top: 450px;
+    margin-top: 320px;
     height: 913px;
     background: var(--bg-clients);
     background-size: cover;
     background-position: center;
     position: relative;
+    @media (max-width:700px) {
+        margin-top: 150px;
+    }
 
     .text {
         position: absolute;

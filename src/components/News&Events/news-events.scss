@@ -17,6 +17,14 @@
         margin-top: 100x;
     }
 
+    @media (max-width: 406px) {
+        grid-template-columns: auto;
+        grid-template-rows: 1fr 1fr 1fr;
+        margin-top: 100x;
+        margin-inline: 0;
+        width: 100%;
+    }
+
     .img1 {
         background-image: url("../News&Events/news&eevents-assets/firstImage.png");
         background-size: cover;
