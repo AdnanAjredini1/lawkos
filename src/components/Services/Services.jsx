@@ -1,5 +1,5 @@
 import "../Services/services.scss";
-import imageSer from './services-assets/servicesImage.png';
+import imageSer from "./services-assets/servicesImage.png";
 function Services() {
   return (
     <div className="services-wrapper">

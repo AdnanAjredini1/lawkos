@@ -6,6 +6,7 @@ function TeamCard({ photo, name, position, onHover, onHoverClasses, readMore }) 
       <div className="imageDiv">
         <img src={photo} />
         <div className={` ${onHoverClasses}`}>
+          <div className="lineeeeeeeee"></div>
           <p className="textHover">{onHover}</p>
           <p className="readMore">{readMore}</p>
         </div>
