@@ -125,6 +125,7 @@
                         left: 45%;
 
                     }
+
                     @media (max-width:520px) {
                         left: 58%;
 
@@ -274,24 +275,22 @@
             justify-content: space-between;
             flex-wrap: wrap;
 
-            .p-first-lats-row{
-                padding-right: 120px;
-                @media (max-width:550px) {
-                    padding-right: 0;
-                    margin-left: 50px;
+
+
+            .languageAndDark {
+                display: flex;
+                flex-direction: row;
+
+                @media (max-width:390px) {
+                    gap: 120px;
                 }
 
-                @media (max-width:400px) {
-                    padding-right: 0;
-                    margin-left: 20px;
+                @media (max-width:370px) {
+                    gap: 95px;
                 }
-            }
 
-            .p-lats-row{
-                margin-left: -400px;
-                @media (max-width:770px) {
-                    margin-left: 0;
-                //    
+                @media (max-width:345px) {
+                    gap: 55px;
                 }
             }
 
@@ -303,7 +302,7 @@
                 cursor: pointer;
                 width: 60px;
                 height: fit-content;
-               
+
 
 
                 border-color: #707070;
@@ -312,23 +311,23 @@
                 border-radius: 19px;
 
                 .iconSwitch {
-                    
+
                     width: 30px;
                     height: 30px;
                     text-align: center;
                     border-radius: 19px;
                     padding-inline: 4px;
 
-                  
+
                 }
 
-                .switchButton{
+                .switchButton {
                     background: #404142;
                     // border-radius: 100%;
                     text-align: center;
                     width: 30px;
                     height: 30px;
-                    
+
                 }
 
             }

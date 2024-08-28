@@ -9,13 +9,11 @@ import sunnyIcon from "./footer-assets/sunny-sharp.svg";
 import moonIcon from "./footer-assets/moon.svg";
 import { useDispatch, useSelector } from "react-redux";
 import { darkActions } from "../../store/slice/darkModeSlice";
-
+import SelectLanguage from "./SelectLanguage/SelectLanguage";
 
 function Footer() {
-
-  const isDark = useSelector(state => state.dark.isDark);
+  const isDark = useSelector((state) => state.dark.isDark);
   const dispatch = useDispatch();
-
 
   return (
     <div className="footer-wrapper">
@@ -107,17 +105,24 @@ function Footer() {
       <div className="third-row">
         <div className="last-line"></div>
         <div className="last-row-footer">
-          <p className="p-first-lats-row" >© 2024 LAWKOS. All rights reserved</p>
-          <p className="p-lats-row" >
+          <p className="p-first-lats-row">© 2024 LAWKOS. All rights reserved</p>
+          <p className="p-lats-row">
             Privacy &nbsp;&nbsp; | &nbsp;&nbsp; Cookies
           </p>
-          <div className="switch-mode-div"  onClick={() => dispatch(darkActions.switchToDark())}>
-            <div className={`iconSwitch ${!isDark ? "switchButton":''}`}>
-              <img width={"14px"} src={sunnyIcon} />
+          <div className="languageAndDark">
+            
+            <div
+              className="switch-mode-div"
+              onClick={() => dispatch(darkActions.switchToDark())}
+            >
+              <div className={`iconSwitch ${!isDark ? "switchButton" : ""}`}>
+                <img width={"14px"} src={sunnyIcon} />
+              </div>
+              <div className={`iconSwitch ${isDark ? "switchButton" : ""}`}>
+                <img width={"14px"} height={"14px"} src={moonIcon} />
+              </div>
             </div>
-            <div className={`iconSwitch ${isDark ? "switchButton":''}`}>
-              <img width={"14px"} height={'14px'} src={moonIcon} />
-            </div>
+            <SelectLanguage />
           </div>
         </div>
       </div>

@@ -1,0 +1,110 @@
+.select-language {
+    display: flex;
+    position: relative;
+    align-items: center;
+    width: fit-content;
+    color: #ffffff;
+    margin-left: 20px;
+    gap: 14px;
+    margin-top: -5px;
+    background: #404142;
+    padding-inline: 14px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 19px;
+    height: 42px;
+    width: 156px;
+    justify-content: space-between;
+
+    &:hover {
+        border-top-right-radius: 0;
+        border-top-left-radius: 0;
+    }
+
+}
+
+.selected-flag {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    object-fit: cover;
+
+}
+
+.select-language .single-language {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 2.5px 6px 3.5px;
+    margin: 3.5px 0;
+    width: 100%;
+}
+
+.select-language .single-language .flag {
+    width: 40px;
+}
+
+.select-language .single-language .text {
+    color: rgb(161, 161, 161);
+    flex: 1;
+}
+
+.select-language .single-language:hover {
+    background-color: white;
+    cursor: pointer;
+}
+
+.select-language .single-language.selected {
+    background-color: white;
+}
+
+.select-language .flag {
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    display: flex;
+    padding-left: 6.8px;
+
+    img {
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        object-fit: cover;
+
+    }
+}
+
+.select-language:hover .dropdown-languages {
+    display: flex;
+    max-height: 300px;
+    overflow-y: auto;
+    visibility: visible;
+
+    &::-webkit-scrollbar {
+
+        width: 2px;
+        height: 10px;
+    }
+
+    &::-webkit-scrollbar-track {
+        box-shadow: inset 0 0 5px #a1aec4;
+        border-radius: 3px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background-color: #aeb8c9;
+        border-radius: 3px;
+    }
+}
+
+.dropdown-languages {
+    position: absolute;
+    left: 0;
+    width: 156px;
+    display: none;
+    bottom: 40px;
+    background: #404142;
+
+    flex-direction: column;
+
+}
