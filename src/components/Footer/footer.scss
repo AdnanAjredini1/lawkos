@@ -55,7 +55,7 @@
                 }
 
                 .subscribe-input {
-                    width: clamp(289px, 26vw, 352px);
+                    width: clamp(289px, 26vw, 342px);
                     height: 58px;
                     border-color: #ffffff;
                     border-width: 0.5px;
@@ -67,6 +67,8 @@
                     padding-left: 50px;
                     padding-top: 5px;
                     color: #FFFFFF;
+                    background: url('./footer-assets/email-line.svg') no-repeat scroll 18px 24px;
+                   
 
                     @media (max-width:396px) {
                         border-radius: 29px;
@@ -74,7 +76,11 @@
                     }
 
                     @media (max-width:1497px) {
-                        padding-left: 15px;
+                        padding-left: 45px;
+
+                    }
+                    @media (max-width:1197px) {
+                        padding-left: 45px;
 
                     }
 
@@ -88,11 +94,12 @@
                     font-style: normal;
 
                     color: #dedede;
+                   
                 }
 
                 .subscribe-button {
                     position: absolute;
-                    left: 49%;
+                    left: 44%;
                     color: #FFFFFF;
                     font-size: 16px;
                     font-weight: normal;
