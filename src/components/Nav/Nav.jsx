@@ -9,15 +9,13 @@ import arrowDown from "../Nav/nav-assets/downArrow.svg";
 import ServicesMenu from "./ServicesMenu";
 import ResourcesMenu from "./ResourcesMenu";
 import { useEffect, useState } from "react";
-
+import { FormattedMessage } from "react-intl";
 
 const Nav = () => {
   const isDark = useSelector((state) => state.dark.isDark);
   console.log(isDark);
-  
 
-
-  const [navbarBackground, setNavbarBackground] = useState(false); 
+  const [navbarBackground, setNavbarBackground] = useState(false);
 
   const handleScroll = () => {
     const scrollTop = window.scrollY;
@@ -34,8 +32,6 @@ const Nav = () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
-
-  
 
   return (
     <div id="navv" className={navbarBackground ? "nav-scrolled" : ""}>
@@ -56,43 +52,52 @@ const Nav = () => {
       <div className="nav-linkss">
         <div className="about-div">
           <Link className="nav-link" to="/about">
-            About
+            <FormattedMessage id="About">About</FormattedMessage>
+            
           </Link>
         </div>
         <div className="services-div">
           <Link className="nav-link service" to="/services">
-            Services
-            {isDark ? <img  className="arrow" src={arrowDown} /> : <img className="arrow" src={arrowDownDark} />}
+            <FormattedMessage id="Services"> Services</FormattedMessage>
+            {isDark ? (
+              <img className="arrow" src={arrowDown} />
+            ) : (
+              <img className="arrow" src={arrowDownDark} />
+            )}
           </Link>
           <div className="lene-div">
-          <div className='line1'>
-            <div className="lineee"></div>
+            <div className="line1">
+              <div className="lineee"></div>
+            </div>
           </div>
-          </div>
-         
-          <ServicesMenu  />
+
+          <ServicesMenu />
         </div>
         <div className="resources-div">
           <Link className="nav-link resource" to="/resources">
-            Resources
-            {isDark ? <img className="arrow" src={arrowDown} /> : <img className="arrow" src={arrowDownDark} />}
+            <FormattedMessage id="Resources"> Resources</FormattedMessage>
+            {isDark ? (
+              <img className="arrow" src={arrowDown} />
+            ) : (
+              <img className="arrow" src={arrowDownDark} />
+            )}
           </Link>
           <div className="lene-div">
-          <div className='line1'>
-            <div className="lineee"></div>
+            <div className="line1">
+              <div className="lineee"></div>
+            </div>
           </div>
-          </div>
-         
-          <ResourcesMenu  />
+
+          <ResourcesMenu />
         </div>
         <div className="news-div">
           <Link className="nav-link" to="/news">
-            News
+            <FormattedMessage id="News"> News</FormattedMessage>
           </Link>
         </div>
         <div className="careers-div">
           <Link className="nav-link" to="/careers">
-            Careers
+            <FormattedMessage id="Careers">Careers</FormattedMessage>
           </Link>
         </div>
       </div>
@@ -102,7 +107,9 @@ const Nav = () => {
           <p className="number-n">+383 123 456 789 </p>
           <p className="number-p">Call our office</p>
         </div>
-        <button className="contact-button">Contact Us</button>
+        <button className="contact-button">
+          <FormattedMessage id="Contact Us">Contact Us</FormattedMessage>
+        </button>
       </div>
     </div>
   );

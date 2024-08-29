@@ -4,6 +4,7 @@ import viewAllDark from '../PracticArea/practic-area-assets/VIEW-ALL-DARK.svg'
 import { useSelector } from 'react-redux';
 import arrow from '../PracticArea/practic-area-assets/Group 34.svg'
 import arrow1 from '../PracticArea/practic-area-assets/Group 34(1).svg'
+import { FormattedMessage } from 'react-intl';
 
 
 function PracticArea({title ,classes, textClasses}) {
@@ -13,7 +14,7 @@ function PracticArea({title ,classes, textClasses}) {
         <div className='pr'>
             <p className='practice-title'>{title}</p>
             <div className="practice-line"></div>
-            <p className={`paragraph  ${textClasses}`}>Meet the brilliant minds behind LawKos. Our team of skilled lawyers and legal experts make LawKos your best choice for legal representation.</p>
+            <p className={`paragraph  ${textClasses}`}><FormattedMessage id='Meet the brilliant minds behind LawKos. Our team of skilled lawyers and legal experts make LawKos your best choice for legal representation.'>Meet the brilliant minds behind LawKos. Our team of skilled lawyers and legal experts make LawKos your best choice for legal representation.</FormattedMessage></p>
         </div>
             <div className={`circle-area  ${classes}`}>
               { isDark ? <img className='img1' src={viewAllDark} /> : <img className='img1' src={viewAll}  /> 

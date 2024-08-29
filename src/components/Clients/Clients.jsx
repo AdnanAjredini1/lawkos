@@ -3,6 +3,7 @@ import '../Clients/clients.scss'
 
 import ClientCard from "./ClientCard";
 import clientsData from "./clients-data";
+import { FormattedMessage } from 'react-intl';
 
 
 
@@ -12,7 +13,7 @@ function Clients() {
     
     return (
         <div className="clients-wrapper">
-           <p className='text'>What our clients say about us</p>
+           <p className='text'><FormattedMessage id='What our clients say about us'>What our clients say about us</FormattedMessage></p>
            <div className='cards-div'>
            {clientsData.map(item => (
                 <ClientCard key={item.description}  img={item.img} description={item.description} name={item.name} position={item.position} />

@@ -14,37 +14,56 @@ import BigImage from "./components/BigImage/BigImage";
 import Clients from "./components/Clients/Clients";
 import NewsEvents from "./components/News&Events/NewsEvents";
 import Team from "./components/Team/Team";
+import { FormattedMessage, IntlProvider } from "react-intl";
+import { translate } from "./translation/translate";
 
 function App() {
   const isDark = useSelector((state) => state.dark.isDark);
+  const language = useSelector((state) => state.language.language);
 
   return (
     <div className="appp" data-theme={isDark ? "dark" : ""}>
-      <Nav />
-      <MobileNav />
-      <Description />
-      <ThreeImages />
-      <Services />
-      <AboutUs />
-      <Experience />
-      <PracticArea title={"Our practice area"} />
-      <Cards />
-      <BigImage />
-      <PracticArea
-        title="Meet our team"
-        classes="none"
-        textClasses="paragraphDisplay"
-      />
-      <Team />
-      <Clients />
-      <PracticArea title={"News & Events"} />
-      <NewsEvents />
-
-      <Footer />
-
-      {/* <div> 
+      <IntlProvider locale={language} messages={translate[language]}>
+        <Nav />
+        <MobileNav />
+        <Description />
+        <ThreeImages />
+        <Services />
+        <AboutUs />
+        <Experience />
+        <PracticArea
+          title={
+            <FormattedMessage id="Our practice area">
+              Our practice area
+            </FormattedMessage>
+          }
+        />
+        <Cards />
+        <BigImage />
+        <PracticArea
+          title={
+            <FormattedMessage id="Meet our team">
+              Meet our team
+            </FormattedMessage>
+          }
+          classes="none"
+          textClasses="paragraphDisplay"
+        />
+        <Team />
+        <Clients />
+        <PracticArea
+          title={
+            <FormattedMessage id="News & Events">
+              News & Events
+            </FormattedMessage>
+          }
+        />
+        <NewsEvents />
+        <Footer />
+        {/* <div> 
         <Outlet />
       </div> */}
+      </IntlProvider>
     </div>
   );
 }

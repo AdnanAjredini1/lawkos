@@ -1,10 +1,11 @@
+import { FormattedMessage } from 'react-intl';
 import manImg from '../Clients/clients-assets/pexels-jordan-bergen.png'
 import girlImg from '../Clients/clients-assets/pexels-los-muertos-c.png'
 
 const clientsData = [
     {
       name: "Drilon Krasniqi",
-      description: "LawKos is our trustworthy legal partner. Their team is professional, responsible and very supportive. The legal advices and services provided are always successful. We want to thank LawKos for being an important factor to the success of our company.",
+      description: <FormattedMessage id="LawKos is our trustworthy legal partner. Their team is professional, responsible and very supportive. The legal advices and services provided are always successful. We want to thank LawKos for being an important factor to the success of our company."> LawKos is our trustworthy legal partner. Their team is professional, responsible and very supportive. The legal advices and services provided are always successful. We want to thank LawKos for being an important factor to the success of our company</FormattedMessage> ,
       img: manImg,
       position: "Director, TravelKos",
     },
