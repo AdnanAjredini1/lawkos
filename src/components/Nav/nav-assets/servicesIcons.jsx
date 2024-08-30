@@ -10,61 +10,62 @@ import licenseIcon from "../nav-assets/license.svg";
 import criminalLawIcon from "../nav-assets/criminal-law.svg";
 import familyIcon from "../nav-assets/family.svg";
 import corporateIcon from "../nav-assets/corporate.svg";
+import { FormattedMessage } from "react-intl";
 
 const servicesItems = [
   {
     icon: corporateIcon,
-    title: "Corporate Law",
+    title: <FormattedMessage id="Corporate Law" defaultMessage='Corporate Law' />,
   },
 
   {
     icon: realEstateIcon,
-    title: "Real Estate",
+    title: <FormattedMessage id="Real Estate" defaultMessage='Real Estate' />,
   },
   {
     icon: taxIcon,
-    title: "Tax & Customs Laws",
+    title: <FormattedMessage id="Tax & Customs Laws " defaultMessage='Tax & Customs Laws' /> ,
   },
   {
     icon: procurementIcon,
-    title: "Public Procurement",
+    title:  <FormattedMessage id="Public Procurement" defaultMessage='Public Procurement' />,
   },
 
   {
     icon: bankingIcon,
-    title: "Banking & Finance",
+    title: <FormattedMessage id="Banking & Finance" defaultMessage='Banking & Finance' />,
   },
 
   {
     icon: insuranceIcon,
-    title: "Insurance",
+    title:  <FormattedMessage id="Insurance" defaultMessage='Insurance' />,
   },
 
   {
     icon: energyIcon,
-    title: "Energy & Infrastructure",
+    title:<FormattedMessage id="Energy & Infrastructure" defaultMessage='Energy & Infrastructure' /> ,
   },
 
   {
     icon: familyIcon,
-    title: "Family Law",
+    title:<FormattedMessage id="Family Law" defaultMessage='Family Law' /> ,
   },
   {
     icon: laptopIcon,
-    title: "ICT Sector",
+    title: <FormattedMessage id="ICT Sector" defaultMessage='ICT Sector' />,
   },
   {
     icon: employmentIcon,
-    title: "Labor & Employment",
+    title:<FormattedMessage id="Labor & Employment" defaultMessage='Labor & Employment' /> ,
   },
 
   {
     icon: licenseIcon,
-    title: "Intellectual Property Law",
+    title: <FormattedMessage id="Intellectual Property Law" defaultMessage='Intellectual Property Law' /> ,
   },
   {
     icon: criminalLawIcon,
-    title: "Criminal Law",
+    title: <FormattedMessage id="Criminal Law" defaultMessage='Criminal Law' />,
   },
 ];
 

@@ -11,7 +11,7 @@ const clientsData = [
     },
     {
       name: "Blinera Morina",
-      description: "Thank you LawKos for your amazing services. We want to express our gratitude for all the years we have been working together. Your team is very professional and talented. We would recommend LawKos to anyone who needs legal services and solutions.",
+      description: <FormattedMessage id='Thank you LawKos for your amazing services. We want to express our gratitude for all the years we have been working together. Your team is very professional and talented. We would recommend LawKos to anyone who needs legal services and solutions.'>Thank you LawKos for your amazing services. We want to express our gratitude for all the years we have been working together. Your team is very professional and talented. We would recommend LawKos to anyone who needs legal services and solutions.</FormattedMessage> ,
       img: girlImg,
       position: "CEO, Jackal Agency",
     }

@@ -10,6 +10,7 @@ import moonIcon from "./footer-assets/moon.svg";
 import { useDispatch, useSelector } from "react-redux";
 import { darkActions } from "../../store/slice/darkModeSlice";
 import SelectLanguage from "./SelectLanguage/SelectLanguage";
+import { FormattedMessage } from "react-intl";
 
 function Footer() {
   const isDark = useSelector((state) => state.dark.isDark);
@@ -22,16 +23,16 @@ function Footer() {
           <div className="title">
             <img src={darkIcon} />
             <p className="titlep">LAWKOS</p>
-            <p className="p-legal">Legal Excellenca</p>
+            <p className="p-legal"><FormattedMessage id="Legal Excellenca" defaultMessage="Legal Excellenca"/></p>
           </div>
           <div className="subscribe-div">
-            <p className="subscribe-p">Subscribe to our newsletter</p>
+            <p className="subscribe-p"><FormattedMessage id="Subscribe to our newsletter" defaultMessage="Subscribe to our newsletter"/></p>
             <input
               type="email"
               className="subscribe-input"
               placeholder="Enter your email"
             />
-            <button className="subscribe-button">Subscribe</button>
+            <button className="subscribe-button"><FormattedMessage id="Subscribe" defaultMessage="Subscribe"/></button>
           </div>
           <div className="part2">
             <div className="second-rowww">
@@ -49,7 +50,7 @@ function Footer() {
                 textAlign: "center",
               }}
             >
-              <p className="connect-p">Connect with us:</p>
+              <p className="connect-p"><FormattedMessage id="Connect with us:" defaultMessage="Connect with us:"/></p>
               <img
                 width={27}
                 height={26}
@@ -79,25 +80,25 @@ function Footer() {
         </div>
         <div className="right-part-first">
           <div className="rowww">
-            <p className="titleee">about</p>
-            <p className="elementtt">Our Story</p>
-            <p className="elementtt">Our Team</p>
-            <p className="elementtt">Careers</p>
-            <p className="elementtt">Clients & Partners</p>
+            <p className="titleee"><FormattedMessage id="About" defaultMessage="About" /></p>
+            <p className="elementtt"><FormattedMessage id="Our Story" defaultMessage="Our Story" /></p>
+            <p className="elementtt"><FormattedMessage id="Our Team" defaultMessage="Our Team" /></p>
+            <p className="elementtt"><FormattedMessage id="Careers" defaultMessage="Careers" /></p>
+            <p className="elementtt"><FormattedMessage id="Clients & Partners" defaultMessage="Clients & Partners" /></p>
           </div>
           <div className="rowww">
-            <p className="titleee">services</p>
-            <p className="elementtt">Practice Area</p>
-            <p className="elementtt">Solutions</p>
-            <p className="elementtt">Legal Tech</p>
-            <p className="elementtt">Case Studies</p>
+            <p className="titleee"><FormattedMessage id="Services" defaultMessage="Services" /></p>
+            <p className="elementtt"><FormattedMessage id="Practice Area" defaultMessage="Practice Area" /></p>
+            <p className="elementtt"><FormattedMessage id="Solutions" defaultMessage="Solutions" /></p>
+            <p className="elementtt"><FormattedMessage id="Legal Tech" defaultMessage="Legal Tech" /></p>
+            <p className="elementtt"><FormattedMessage id="Case Studies" defaultMessage="Case Studies" /></p>
           </div>
           <div className="rowww">
-            <p className="titleee">Resources</p>
-            <p className="elementtt">Contact Us</p>
-            <p className="elementtt">Latest News</p>
-            <p className="elementtt">Insights</p>
-            <p className="elementtt">Legal Notices</p>
+            <p className="titleee"><FormattedMessage id="Resources" defaultMessage="Resources" /></p>
+            <p className="elementtt"><FormattedMessage id="Contact Us" defaultMessage="Contact Us" /></p>
+            <p className="elementtt"><FormattedMessage id="Latest News" defaultMessage="Latest News" /></p>
+            <p className="elementtt"><FormattedMessage id="Insights" defaultMessage="Insights" /></p>
+            <p className="elementtt"><FormattedMessage id="Legal Notices" defaultMessage="Legal Notices" /></p>
           </div>
         </div>
       </div>

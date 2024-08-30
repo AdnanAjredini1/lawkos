@@ -10,6 +10,7 @@ import TeamCard from "./TeamCards/TeamCard";
 import img1 from "../team-assets/nussbaum-law-1qJPdNW.png";
 import img2 from "../team-assets/nussbaum-law-ea3STzN7Lw8-unsplash.png";
 import img3 from "../team-assets/nussbaum-law-IOvsEAEjnDE-unsplash.png";
+import { FormattedMessage } from "react-intl";
 
 function CustomNextArrow(props) {
   const { className, style, onClick, isDark,imageClass } = props;
@@ -99,7 +100,7 @@ function Carousel() {
         <div>
           <TeamCard
             name="Labinot Halimi"
-            position="Managing Partner"
+            position=<FormattedMessage id="Managing Partner" defaultMessage="Managing Partner"/>
             onHover="Labinot has been working with LawKos for over 10 
               years. He has helped a lot of our clients achieve their
               goals with their cases..."
@@ -112,7 +113,7 @@ function Carousel() {
         <div>
           <TeamCard
             name="Arbenita Jashari"
-            position="Attorney at law, Partner"
+            position=<FormattedMessage id="Attorney at law, Partner" defaultMessage="Attorney at law, Partner"/>
             photo={img2}
             onHover="Labinot has been working with LawKos for over 10 
               years. He has helped a lot of our clients achieve their
@@ -125,7 +126,7 @@ function Carousel() {
         <div>
           <TeamCard
             name="Festina Murati"
-            position="Attorney at law"
+            position=<FormattedMessage id="Attorney at law" defaultMessage="Attorney at law"/>
             photo={img3}
             onHover="Labinot has been working with LawKos for over 10 
               years. He has helped a lot of our clients achieve their
