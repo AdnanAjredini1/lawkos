@@ -9,6 +9,7 @@ function Description() {
   return (
     <div className="descriptionn">
       <motion.div
+      
         initial={{ x: "-7vw" }}
         animate={{ x: 0 }}
         transition={{ type: "spring", stiffness: 35 }}
