@@ -28,7 +28,7 @@ function App() {
         <Nav />
         <MobileNav />
         <Description />
-        <ThreeImages />
+        {/* <ThreeImages /> */}
         <ThreeImages1 />
         <Services />
         <AboutUs />
