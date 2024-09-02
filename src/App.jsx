@@ -16,6 +16,7 @@ import NewsEvents from "./components/News&Events/NewsEvents";
 import Team from "./components/Team/Team";
 import { FormattedMessage, IntlProvider } from "react-intl";
 import { translate } from "./translation/translate";
+import ThreeImages1 from "./components/ThreeImages2/ThreeImages1";
 
 function App() {
   const isDark = useSelector((state) => state.dark.isDark);
@@ -28,6 +29,7 @@ function App() {
         <MobileNav />
         <Description />
         <ThreeImages />
+        <ThreeImages1 />
         <Services />
         <AboutUs />
         <Experience />

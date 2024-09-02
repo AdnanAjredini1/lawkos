@@ -7,7 +7,7 @@ export default function AboutUs() {
     <div className='about-us-wrapper'>
       <div className='title-and-line'>
         <div className="line-aboutUs"></div>
-        <p> <FormattedMessage id='about us'>about us</FormattedMessage></p>
+        <p> <FormattedMessage id='ABOUT US'>ABOUT US</FormattedMessage></p>
       </div>
       <div className='right-part-aboutUs'>
         <p>

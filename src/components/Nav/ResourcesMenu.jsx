@@ -62,7 +62,7 @@ function ResourcesMenu() {
     <div className="resources-container">
       <div className="nav-megamenu-resources">
         <div className="resources-left-part">
-          <p className="titlep">Resources</p>
+          <p className="titlep"><FormattedMessage id="Resources" defaultMessage="Resources" /></p>
           <div className="resources-items">
             {resourceItems.map((item) => (
               <ServicesCard
@@ -102,8 +102,10 @@ function ResourcesMenu() {
 
             <div className="carousel-img">
               <p className="carousel-text">
-                Why LawKos is your ideal partner for legal solutions and
-                services.
+              <FormattedMessage
+                  id="Why LawKos is your ideal partner for legal solutions and services?"
+                  defaultMessage="Why LawKos is your ideal partner for legal solutions and services."
+                />
               </p>
               <div className="img-container">
                 <img src={img1} />

@@ -105,10 +105,10 @@ const Nav = () => {
         {isDark ? <img src={phoneIconDark} /> : <img src={phoneIcon} />}
         <div className="number">
           <p className="number-n">+383 123 456 789 </p>
-          <p className="number-p">Call our office</p>
+          <p className="number-p"><FormattedMessage id="Call our office" defaultMessage="Call our office" /></p>
         </div>
         <button className="contact-button">
-          <FormattedMessage id="Contact Us">Contact Us</FormattedMessage>
+          <FormattedMessage id="Contact Us" defaultMessage="Contact Us"/>
         </button>
       </div>
     </div>

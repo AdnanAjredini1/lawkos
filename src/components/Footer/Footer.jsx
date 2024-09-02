@@ -39,7 +39,7 @@ function Footer() {
               <img src={phoneIconDark} />
               <div className="numberrr">
                 <p className="number-n">+383 123 456 789 </p>
-                <p className="number-p">Call our office</p>
+                <p className="number-p"><FormattedMessage id="Call our office" defaultMessage="Call our office"/></p>
               </div>
             </div>
             <div
@@ -106,9 +106,9 @@ function Footer() {
       <div className="third-row">
         <div className="last-line"></div>
         <div className="last-row-footer">
-          <p className="p-first-lats-row">© 2024 LAWKOS. All rights reserved</p>
+          <p className="p-first-lats-row"><FormattedMessage id="© 2024 LAWKOS. All rights reserved" defaultMessage="© 2024 LAWKOS. All rights reserved" /></p>
           <p className="p-lats-row">
-            Privacy &nbsp;&nbsp; | &nbsp;&nbsp; Cookies
+            <FormattedMessage id="Privacy" defaultMessage="Privacy" /> &nbsp;&nbsp; | &nbsp;&nbsp; <FormattedMessage id="Cookies" defaultMessage="Cookies" /> 
           </p>
           <div className="languageAndDark">
             

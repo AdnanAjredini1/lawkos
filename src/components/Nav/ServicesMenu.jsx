@@ -20,7 +20,7 @@ function ServicesMenu() {
               fontStyle: "normal",
             }}
           >
-            Our practice area
+            <FormattedMessage id="Our practice area" defaultMessage="Our practice area" />
           </p>
 
           <div className="services-items">
