@@ -12,40 +12,40 @@
 }
 
 .image1111Div {
-    border-radius: 25px;
+    border-radius: 30px;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25)  ;
     background: url('./three-images1-assets/left.webp');
     background-size: cover;
     background-position: center;
     width: 25.9vw;
     height: 27.6vw;
-    @media (max-width:900px) {
-        border-radius: 10px;
-    }
-    @media (max-width:600px) {
-        border-radius: 5px;
-    }
+    // @media (max-width:900px) {
+    //     border-radius: 10px;
+    // }
+    // @media (max-width:600px) {
+    //     border-radius: 5px;
+    // }
     
 }
 
 .image2222Div {
-    border-radius: 25px;
+    border-radius: 30px;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     background: url('./three-images1-assets/middle.webp');
     background-size: cover;
     background-position: center;
     width: 25.9vw;
-    height: 36.2vw;
-    @media (max-width:900px) {
-        border-radius: 10px;
-    }
-    @media (max-width:600px) {
-        border-radius: 5px;
-    }
+    height: 38.2vw;
+    // @media (max-width:900px) {
+    //     border-radius: 10px;
+    // }
+    // @media (max-width:600px) {
+    //     border-radius: 5px;
+    // }
 }
 
 .image3333Div {
-    border-radius: 25px;
+    border-radius: 30px;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     background: url('./three-images1-assets/rightttt.webp');
     background-size: cover;
@@ -53,12 +53,12 @@
     width: 25.9vw;
     height: 27.6vw;
 
-    @media (max-width:900px) {
-        border-radius: 10px;
-    }
-    @media (max-width:600px) {
-        border-radius: 5px;
-    }
+    // @media (max-width:900px) {
+    //     border-radius: 10px;
+    // }
+    // @media (max-width:600px) {
+    //     border-radius: 5px;
+    // }
 
    
 }
