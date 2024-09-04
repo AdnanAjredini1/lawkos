@@ -318,21 +318,27 @@
                 border-radius: 19px;
 
                 .iconSwitch {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
 
-                    width: 30px;
+                    width: 31px;
                     height: 30px;
-                    text-align: center;
+                    // text-align: center;
                     border-radius: 19px;
-                    padding-inline: 4px;
-
+                    // padding-inline: 4px;
+                   
 
                 }
 
                 .switchButton {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
                     background: #404142;
                     // border-radius: 100%;
-                    text-align: center;
-                    width: 30px;
+                   
+                    width: 31px;
                     height: 30px;
 
                 }

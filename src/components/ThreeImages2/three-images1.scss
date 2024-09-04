@@ -9,6 +9,10 @@
         margin-top: 75px;
         gap: 10px;
     }
+    @media (max-width:600px) {
+       padding-inline: 3%;
+       gap: 3px;
+    }
 }
 
 .image1111Div {
@@ -26,7 +30,8 @@
     //     border-radius: 5px;
     // }
     @media (max-width:600px) {
-        height: 150px;
+        height: 200px;
+        width: 27.5vw;
     }
     
 }
@@ -43,7 +48,8 @@
     //     border-radius: 10px;
     // }
     @media (max-width:600px) {
-        height: 220px;
+        height: 260px;
+        width: 27.5vw;
     }
 }
 
@@ -63,7 +69,8 @@
     //     border-radius: 5px;
     // }
     @media (max-width:600px) {
-        height: 150px;
+        height: 200px;
+        width: 27.5vw;
     }
    
 }

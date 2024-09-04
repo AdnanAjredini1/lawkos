@@ -7,6 +7,7 @@
 
   }
 
+
   .mobileTitle {
     font-family: "DM Serif Display", serif;
     width: 140px;
@@ -28,46 +29,94 @@
     margin-right: 6%;
   }
 
-    .darkk {
+  .darkk {
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='%23ffffff' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
   }
-  
+
   .item-mob {
-    border-bottom: 2px solid #a67b48;
-    border-left: 8px solid  transparent;
+    border-bottom: 2px solid #292520;
+    border-left: 8px solid transparent;
     padding-inline: 6px;
-     &:hover{
-      border-left: 8px solid  #292520 ;
-     }
+
+    &:hover {
+      border-left: 8px solid #a67b48;
+    }
   }
 
-  .item-mob:last-child{
+  .item-mob:last-child {
     border-bottom: none;
   }
 
   .mobileBtn {
     margin-top: 50px;
+    border-radius: 30px;
     color: white;
-    background-color: #292520 ;
+    background-color: #292520;
     width: 200px;
     margin-left: 20%;
     height: 60px;
     font-weight: 600;
-    
+
     @media (max-width:330px) {
       margin-left: 14%;
-      
+
     }
-    
 
-    
-
-    // .li-drop {
-    //   border-bottom: 2px solid #a67b48;
-    // }
-    
   }
-  
 
+
+  .switch-mode-div {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    width: 60px;
+    height: fit-content;
+
+
+
+    border-color: #707070;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 19px;
+
+    .iconSwitch {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 30px;
+      height: 30px;
+      transition: 0.25s;
+      border-radius: 19px;
+      padding-inline: 4px;
+
+
+    }
+
+    .switchButton {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: 0.15s;
+      background: #404142;
+      width: 30px;
+      height: 30px;
+
+    }
+
+  }
+
+  .switchButtonSelectLanguageWrapper {
+    margin-top: 20px;
+    display: flex !important;
+    flex-direction: row;
+    gap: 30px;
+    justify-content: center;
+  }
+
+  .btn-close {
+    filter: #a67b48;
+  }
 
 }
