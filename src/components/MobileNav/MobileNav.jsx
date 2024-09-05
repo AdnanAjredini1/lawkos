@@ -226,7 +226,12 @@ function MobileNav() {
                   sunnyIcon={sunnyIcon}
                   moonIcon={moonIcon}
                 />
-                <SelectLanguage />
+                <SelectLanguage
+                  mobileNevClasses="select-language-bd"
+                  dropdownClasses="dropdownClass"
+                  arrowClasses="arrowClass"
+                  selectedFlagClass='selectedFlagClass'
+                />
               </div>
             </ul>
           </div>

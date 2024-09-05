@@ -137,9 +137,44 @@
     color: #000000;
     
   }
+
+
   
   .number-n{
     color: #000000;
   }
  
+  .select-language-bd{
+    border: 1px solid #404142;
+    background-color: var(--select-language-bg);
+    color: var(--primary-text-color);
+    &:hover{
+      border-top: none;
+    }
+  }
+
+  .select-language-bd .single-language:hover {
+    background-color: var(--primary-text-color);
+    cursor: pointer;
+}
+  .dropdownClass{
+    width: 156px;
+    left: -1px;
+     border: 1px solid #404142;
+     background-color: var(--select-language-bg);
+     color: var(--primary-text-color);
+     border-bottom: none;
+     &:hover{
+      border-bottom: none;
+    }
+  }
+
+  .arrowClass path{
+    fill: var(--primary-text-color);
+  }
+
+  // .selectedFlagClass{
+  //   border: 0.5px solid  #404142;
+  // }
+
 }

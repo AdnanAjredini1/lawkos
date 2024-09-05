@@ -16,7 +16,7 @@ import arrpw from '../SelectLanguage/select-language-assets/flags/Polygon 3.svg'
 import { languageActions } from "../../../store/slice/languageSlice";
 
 
-function SelectLanguage() {
+function SelectLanguage({mobileNevClasses, dropdownClasses, arrowClasses, selectedFlagClass}) {
   const dispatch = useDispatch();
   const language = useSelector((state) => state.language.language);
 
@@ -42,15 +42,16 @@ function SelectLanguage() {
   };
 
   return (
-    <div className="select-language">
-      <img src={selectedFlag} alt="selected-flag" className="selected-flag" />
+    <div className={`select-language  ${mobileNevClasses}`}>
+      <img src={selectedFlag} alt="selected-flag" className={`selected-flag  ${selectedFlagClass}`} />
       {languages.find((lang) => lang.value === language)?.lang || "English"}
-      <img
+      <svg className={`language-arrow  ${arrowClasses}`} xmlns="http://www.w3.org/2000/svg" width="8" height="5" viewBox="1719.75 9715 8 5"><path d="m1723.75 9720-4-5h8z" fill="#fff" fill-rule="evenodd" data-name="Polygon 3"/></svg>
+      {/* <img
         src={arrpw}
-        className="language-arrow"
-      />
+        className={`language-arrow  ${arrowClasses}`}
+      /> */}
 
-      <div className="dropdown-languages">
+      <div className={`dropdown-languages  ${dropdownClasses}`}>
         {languages
           .sort((a, b) => a.lang.localeCompare(b.lang))
           .map((thisLang, i) => (

@@ -2,7 +2,7 @@ export default function SingleLanguage({ styles, flag, language, handleLanguageC
   return (
     <div>
       <div
-        className={`single-language ${styles}`}
+        className={`single-language  ${styles}`}
         onClick={handleLanguageChange}
       >
         <div className="flag">

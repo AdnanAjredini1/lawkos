@@ -3,11 +3,11 @@
     position: relative;
     align-items: center;
     width: fit-content;
-    color: #ffffff;
+    color: #fff;
     margin-left: 20px;
     gap: 14px;
     margin-top: -5px;
-    background: #404142;
+    background: #404142;;
     padding-inline: 14px;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -15,10 +15,12 @@
     height: 42px;
     width: 156px;
     justify-content: space-between;
+    
 
     &:hover {
         border-top-right-radius: 0;
         border-top-left-radius: 0;
+       
     }
 
 }
@@ -28,6 +30,7 @@
     height: 20px;
     border-radius: 50%;
     object-fit: cover;
+    // border:1px solid transparent ;
 
 }
 
@@ -107,4 +110,16 @@
 
     flex-direction: column;
 
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+li {
+  color: var(--primary-text-color);
 }
