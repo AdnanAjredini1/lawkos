@@ -87,7 +87,7 @@ function MobileNav() {
             <ul className="navbar-nav justify-content-end flex-grow-1 pe-3">
               <li className="nav-item item-mob">
                 <a className="nav-link " aria-current="page" href="/about">
-                  <FormattedMessage id="About" defaultMessage="About"/> 
+                  <FormattedMessage id="About" defaultMessage="About" />
                 </a>
               </li>
 
@@ -99,36 +99,47 @@ function MobileNav() {
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
                 >
-                  <FormattedMessage id="Services" defaultMessage="Services"/>  
+                  <FormattedMessage id="Services" defaultMessage="Services" />
                 </a>
                 <ul className="dropdown-menu">
                   <li>
                     <a className="dropdown-item " href="#">
-                    <FormattedMessage id="Corporate Law" defaultMessage="Corporate Law"/>   
+                      <FormattedMessage
+                        id="Corporate Law"
+                        defaultMessage="Corporate Law"
+                      />
                     </a>
                   </li>
                   <li>
                     <a className="dropdown-item " href="#">
-                    <FormattedMessage id="Real Estate" defaultMessage="Real Estate"/>  
-                      
+                      <FormattedMessage
+                        id="Real Estate"
+                        defaultMessage="Real Estate"
+                      />
                     </a>
                   </li>
                   <li>
                     <a className="dropdown-item" href="#">
-                    <FormattedMessage id="Tax & Customs Laws " defaultMessage="Tax & Customs Laws "/>
-                  
+                      <FormattedMessage
+                        id="Tax & Customs Laws "
+                        defaultMessage="Tax & Customs Laws "
+                      />
                     </a>
                   </li>
                   <li>
                     <a className="dropdown-item" href="#">
-                    <FormattedMessage id="Public Procurement" defaultMessage="Public Procurement"/> 
-                      
+                      <FormattedMessage
+                        id="Public Procurement"
+                        defaultMessage="Public Procurement"
+                      />
                     </a>
                   </li>
                   <li>
                     <a className="dropdown-item" href="#">
-                    <FormattedMessage id="Banking & Finance" defaultMessage="Banking & Finance"/>  
-                      
+                      <FormattedMessage
+                        id="Banking & Finance"
+                        defaultMessage="Banking & Finance"
+                      />
                     </a>
                   </li>
                 </ul>
@@ -136,8 +147,7 @@ function MobileNav() {
 
               <li className="nav-item  item-mob">
                 <a className="nav-link" href="/news">
-                <FormattedMessage id="News" defaultMessage="News"/>  
-                  
+                  <FormattedMessage id="News" defaultMessage="News" />
                 </a>
               </li>
 
@@ -149,38 +159,41 @@ function MobileNav() {
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
                 >
-                 <FormattedMessage id="Resources" defaultMessage="Resources"/>  
-                  
+                  <FormattedMessage id="Resources" defaultMessage="Resources" />
                 </a>
                 <ul className="dropdown-menu">
                   <li>
                     <a className="dropdown-item" href="#">
-                    <FormattedMessage id="Network" defaultMessage="Network"/> 
-                      
+                      <FormattedMessage id="Network" defaultMessage="Network" />
                     </a>
                   </li>
                   <li>
                     <a className="dropdown-item" href="#">
-                    <FormattedMessage id="Legal Notices" defaultMessage="Legal Notices"/>
-                      
+                      <FormattedMessage
+                        id="Legal Notices"
+                        defaultMessage="Legal Notices"
+                      />
                     </a>
                   </li>
 
                   <li>
                     <a className="dropdown-item" href="#">
-                    <FormattedMessage id="Laws of Kosova" defaultMessage="Laws of Kosova"/> 
-                      
+                      <FormattedMessage
+                        id="Laws of Kosova"
+                        defaultMessage="Laws of Kosova"
+                      />
                     </a>
                   </li>
                   <li>
                     <a className="dropdown-item" href="#">
-                    <FormattedMessage id="Insights" defaultMessage="Insights"/> 
-                      
+                      <FormattedMessage
+                        id="Insights"
+                        defaultMessage="Insights"
+                      />
                     </a>
                   </li>
                   <li>
-                    <a className="dropdown-item" href="#"> 
-
+                    <a className="dropdown-item" href="#">
                       Podcast
                     </a>
                   </li>
@@ -189,12 +202,22 @@ function MobileNav() {
 
               <li className="nav-item  item-mob">
                 <a className="nav-link" href="/news">
-                <FormattedMessage id="Careers" defaultMessage="Careers"/> 
-                  
+                  <FormattedMessage id="Careers" defaultMessage="Careers" />
                 </a>
               </li>
 
-              <button className="btn mobileBtn"><FormattedMessage id="Contact Us" defaultMessage="Contact Us"/> </button>
+              <button className="btn mobileBtn">
+                <FormattedMessage id="Contact Us" defaultMessage="Contact Us" />{" "}
+              </button>
+              <div className="number">
+                <p className="number-p">
+                  <FormattedMessage
+                    id="Call our office"
+                    defaultMessage="Call our office :"
+                  />
+                </p>
+                <p className="number-n">+383 123 456 789 </p>
+              </div>
               <div className="switchButtonSelectLanguageWrapper">
                 <SwitchModeButton
                   wrapperClasses="switch-mode-div "
@@ -206,15 +229,6 @@ function MobileNav() {
                 <SelectLanguage />
               </div>
             </ul>
-            {/* <form className="d-flex mt-3" role="search">
-            <input
-              className="form-control me-2"
-              type="search"
-              placeholder="Search"
-              aria-label="Search"
-            />
-            <button className="btn btn-outline-success" type="submit">Search</button>
-          </form> */}
           </div>
         </div>
       </div>

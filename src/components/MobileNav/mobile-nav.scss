@@ -108,15 +108,38 @@
   }
 
   .switchButtonSelectLanguageWrapper {
-    margin-top: 20px;
+    margin-top: 10px;
     display: flex !important;
-    flex-direction: row;
-    gap: 30px;
-    justify-content: center;
+    flex-direction: row !important;
+    // gap: 30px;
+    justify-content: space-around;
   }
 
   .btn-close {
     filter: #a67b48;
   }
+  
 
+  .number{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: -10px;
+    
+  }
+  
+  .number-p{
+    font-size: larger;
+    font-weight: 600;
+    color: #000000;
+    
+  }
+  
+  .number-n{
+    color: #000000;
+  }
+ 
 }
